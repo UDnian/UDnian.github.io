@@ -35,7 +35,7 @@ ls -lh  显示出文件大小
 cd切换目录(/ 到根目录; ..到上层目录; - 到上次工作的目录;~ 到当前用户根目录)change directory
 
 p">
-<meta property="og:updated_time" content="2016-11-01T11:30:04.515Z">
+<meta property="og:updated_time" content="2016-11-03T10:12:10.508Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Command 工作常用命令">
 <meta name="twitter:description" content="工作常用命令：Linux、eclipse、sublime
@@ -121,7 +121,7 @@ p">
 		<div id="toc" class="toc-article">
 			<strong class="toc-title">文章目录</strong>
 		
-			<ol class="toc"><li class="toc-item toc-level-3"><a class="toc-link" href="#Linux"><span class="toc-number">1.</span> <span class="toc-text">Linux</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#eclipse"><span class="toc-number">2.</span> <span class="toc-text">eclipse</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#sublime-text-3"><span class="toc-number">3.</span> <span class="toc-text">sublime text 3</span></a></li></ol>
+			<ol class="toc"><li class="toc-item toc-level-3"><a class="toc-link" href="#Linux"><span class="toc-number">1.</span> <span class="toc-text">Linux</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#eclipse"><span class="toc-number">2.</span> <span class="toc-text">eclipse</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#sublime-text-3"><span class="toc-number">3.</span> <span class="toc-text">sublime text 3</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#git"><span class="toc-number">4.</span> <span class="toc-text">git</span></a></li></ol>
 		
 		</div>
 		
@@ -189,8 +189,35 @@ ls -l | grep &quot;^-&quot; | wc -l   当前目录下有多少个文件
 <pre><code>echo &quot;123&quot; &gt; 1.txt
 </code></pre></li>
 <li><code>useradd</code><br>添加用户</li>
-<li><code>chmod</code><br>文件权限<br>drwxr-xr-x 8 root  root      4096 Dec  3  2013 chenliang<br>drwxr-xr-x 2 root  root      4096 Oct 11  2013 cms<br>-rwxr-xr-x 1 root  root      1014 Aug 31  2013 ct.sh<br>drwxr-xr-x 3 root  root      4096 Dec 29 23:52 data<br>drwxr-xr-x 3 root  root      4096 Mar 27 22:09 jishu<br>第一字母：d为文件夹 -为文件 后面9位3组<br>r：read    w:write   x:execute<br>第一组：文件所有者<br>第二组：文件所有者同组人员<br>第三组：其他人员<br>修改权限：<br>chmod   (change modify)<br>例：<br>chmod +x 3.txt  三组人员都有执行权限<br>chmod -x 3.txt  三组人员都没有执行权限<br>chmod u+x 3.txt 第一组人员有执行权限(user)<br>chmod g+x 3.txt 第二组人员有执行权限(group)<br>chmod o+x 3.txt 第三组人员有执行权限(other)<br>三组权限分别用三个8进制数代表<br>-rwxr-xr-x 3.txt<br>chmod 753 3.txt<br>修改权限后结果为：-rwxr-x-wx<br>修改文件所有者<br>chown user2 3.txt</li>
-<li><code>ps</code><br>查看进程(process status)查看tomcat进程<pre><code>ps -ef | grep tomcat
+<li><p><code>chmod</code></p>
+<pre><code>文件权限
+drwxr-xr-x 8 root  root      4096 Dec  3  2013 chenliang
+drwxr-xr-x 2 root  root      4096 Oct 11  2013 cms
+-rwxr-xr-x 1 root  root      1014 Aug 31  2013 ct.sh
+drwxr-xr-x 3 root  root      4096 Dec 29 23:52 data
+drwxr-xr-x 3 root  root      4096 Mar 27 22:09 jishu
+第一字母：d为文件夹 -为文件 后面9位3组
+r：read    w:write   x:execute
+第一组：文件所有者
+第二组：文件所有者同组人员
+第三组：其他人员
+修改权限：
+chmod   (change modify)
+例：
+chmod +x 3.txt  三组人员都有执行权限
+chmod -x 3.txt  三组人员都没有执行权限
+chmod u+x 3.txt 第一组人员有执行权限(user)
+chmod g+x 3.txt 第二组人员有执行权限(group)
+chmod o+x 3.txt 第三组人员有执行权限(other)
+三组权限分别用三个8进制数代表
+-rwxr-xr-x 3.txt
+chmod 753 3.txt
+修改权限后结果为：-rwxr-x-wx
+修改文件所有者
+chown user2 3.txt
+</code></pre></li>
+<li><p><code>ps</code><br>查看进程(process status)查看tomcat进程</p>
+<pre><code>ps -ef | grep tomcat
 </code></pre></li>
 <li><code>crontab</code><br>定时任务相关</li>
 <li><code>scp</code><br>服务器间文件互传</li>
@@ -231,6 +258,20 @@ ls -l | grep &quot;^-&quot; | wc -l   当前目录下有多少个文件
 <li><code>Ctrl Shift ↓</code>    可以移动此行代码，与下行互换</li>
 <li><code>Ctrl+M</code>          由md文件生成html预览 hexo使用</li>
 </ul>
+<h3 id="git"><a href="#git" class="headerlink" title="git"></a>git</h3><ul>
+<li><code>git init</code>                初始化本地库</li>
+<li><code>git add 1.txt</code>           增加文件到本地库</li>
+<li><code>git commit -m &quot;说明&quot;</code>    提交到本地库并加上说明</li>
+<li><code>git log</code>                 查看操作日志      </li>
+<li><code>git reset --hard HEAD^</code>  回退到上个版本</li>
+<li><code>git reset --hard HEAD~5</code> 回退到上5个版本      </li>
+<li><code>git reset --hard 36281</code>  回退到36281版本 版本号可写不全</li>
+<li><code>git reflog</code>              查看使用过的命令记录</li>
+<li><code>git diff HEAD -- 1.txt</code>  查看工作区和版本库里面最新版本的区别</li>
+<li><code>git checkout -- 1.txt</code>   可以丢弃工作区的修改</li>
+<li><code>git reset HEAD 1.txt</code>    可以把暂存区的修改撤销掉(unstage) 重新放回工作区</li>
+<li><code>git push origin master</code>  提交到远程git</li>
+</ul>
   
 	</div>
 		<footer class="article-footer clearfix">
@@ -260,8 +301,8 @@ ls -l | grep &quot;^-&quot; | wc -l   当前目录下有多少个文件
  
 
 <div class="next">
-<a href="/2016/10/31/hello-git/"  title="hello-git">
- <span>hello-git
+<a href="/2016/10/31/java/"  title="java">
+ <span>java
 </span>
 </a>
 </div>
