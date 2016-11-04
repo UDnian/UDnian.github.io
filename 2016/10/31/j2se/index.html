@@ -4,7 +4,7 @@
 <head>
   <meta charset="UTF-8">
   
-    <title>J2EE�������� | UDnian blog</title>
+    <title>J2EE经验整合 | UDnian blog</title>
     <meta name="viewport" content="width=device-width, initial-scale=1,user-scalable=no">
     
     <meta name="author" content="UDnian">
@@ -12,38 +12,38 @@
 
     
     <meta name="description" content="java
-һ��Ҫ���жϴ�������Map&amp;lt;String, Object&amp;gt; map = new HashMap&amp;lt;String, Object&amp;gt;();
+一定要空判断处理如用Map&amp;lt;String, Object&amp;gt; map = new HashMap&amp;lt;String, Object&amp;gt;();
 String name = map.get(&amp;quot;name&amp;quot;);
-ʹ��nameǰһ��Ҫ���жϣ������ᱨ��ָ���쳣��
+使用name前一定要空判断，否则会报空指针异常。
 
 
 eclipse/myeclipse
-myeclipse������">
+myeclipse中若新增插件处理删除\eclipse\co">
 <meta property="og:type" content="article">
-<meta property="og:title" content="J2EE��������">
+<meta property="og:title" content="J2EE经验整合">
 <meta property="og:url" content="http://yoursite.com/2016/10/31/j2se/index.html">
 <meta property="og:site_name" content="UDnian blog">
 <meta property="og:description" content="java
-һ��Ҫ���жϴ�������Map&amp;lt;String, Object&amp;gt; map = new HashMap&amp;lt;String, Object&amp;gt;();
+一定要空判断处理如用Map&amp;lt;String, Object&amp;gt; map = new HashMap&amp;lt;String, Object&amp;gt;();
 String name = map.get(&amp;quot;name&amp;quot;);
-ʹ��nameǰһ��Ҫ���жϣ������ᱨ��ָ���쳣��
+使用name前一定要空判断，否则会报空指针异常。
 
 
 eclipse/myeclipse
-myeclipse������">
+myeclipse中若新增插件处理删除\eclipse\co">
 <meta property="og:image" content="http://yoursite.com/img/j2ee/e113.jpg">
 <meta property="og:image" content="http://yoursite.com/img/j2ee/my113.png">
-<meta property="og:updated_time" content="2016-11-04T12:33:22.530Z">
+<meta property="og:updated_time" content="2016-11-04T12:41:17.656Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="J2EE��������">
+<meta name="twitter:title" content="J2EE经验整合">
 <meta name="twitter:description" content="java
-һ��Ҫ���жϴ�������Map&amp;lt;String, Object&amp;gt; map = new HashMap&amp;lt;String, Object&amp;gt;();
+一定要空判断处理如用Map&amp;lt;String, Object&amp;gt; map = new HashMap&amp;lt;String, Object&amp;gt;();
 String name = map.get(&amp;quot;name&amp;quot;);
-ʹ��nameǰһ��Ҫ���жϣ������ᱨ��ָ���쳣��
+使用name前一定要空判断，否则会报空指针异常。
 
 
 eclipse/myeclipse
-myeclipse������">
+myeclipse中若新增插件处理删除\eclipse\co">
 <meta name="twitter:image" content="http://yoursite.com/img/j2ee/e113.jpg">
 
     
@@ -102,7 +102,7 @@ myeclipse������">
 		<header class="article-info clearfix">
   <h1 itemprop="name">
     
-      <a href="/2016/10/31/j2se/" title="J2EE��������" itemprop="url">J2EE��������</a>
+      <a href="/2016/10/31/j2se/" title="J2EE经验整合" itemprop="url">J2EE经验整合</a>
   </h1>
   <p class="article-author">By
        
@@ -123,39 +123,39 @@ myeclipse������">
 		</div>
 		
 		<h1 id="java"><a href="#java" class="headerlink" title="java"></a>java</h1><ul>
-<li>һ��Ҫ���жϴ���<pre><code>����Map&lt;String, Object&gt; map = new HashMap&lt;String, Object&gt;();
+<li>一定要空判断处理<pre><code>如用Map&lt;String, Object&gt; map = new HashMap&lt;String, Object&gt;();
 String name = map.get(&quot;name&quot;);
-ʹ��nameǰһ��Ҫ���жϣ������ᱨ��ָ���쳣��
+使用name前一定要空判断，否则会报空指针异常。
 </code></pre></li>
 </ul>
 <h1 id="eclipse-myeclipse"><a href="#eclipse-myeclipse" class="headerlink" title="eclipse/myeclipse"></a>eclipse/myeclipse</h1><ul>
-<li>myeclipse����������������<pre><code>ɾ��\eclipse\configuration\org.eclipse.update�µ�platform.xml�ļ���������
+<li>myeclipse中若新增插件处理<pre><code>删除\eclipse\configuration\org.eclipse.update下的platform.xml文件，重启。
 </code></pre></li>
-<li>eclipse����navigate��ͼ�ļ�����ʾ����<pre><code>Ŀǰ������eclipseֻ�а汾��3.5��3.6�Ż�֧��navigate��ͼ����ʾ�ļ����󣬼����ļ����ֱ�������ʱ���ļ���������ʾС���档
+<li>eclipse工具navigate视图文件不提示错误<pre><code>目前测试下eclipse只有版本：3.5、3.6才会支持navigate视图下提示文件错误，即若文件出现编译错误时，文件上面会显示小红叉。
 </code></pre></li>
-<li>��web��Ŀ�޷����ص�tomcat��<pre><code>��ʱ��svn�����ϼ�����web��Ŀ��Ϊ���������޷����ص�tomcat��
-�����ӳ��ù���eclipse��myeclipse��������������
+<li>论web项目无法加载到tomcat中<pre><code>有时从svn环境上检出的web项目因为环境问题无法加载到tomcat中
+下面从常用工具eclipse、myeclipse给出解决方案。
 </code></pre><img src="/img/j2ee/e113.jpg" style="width: 50%;"><br><img src="/img/j2ee/my113.png" style="width: 50%;"></li>
 </ul>
 <h1 id="web"><a href="#web" class="headerlink" title="web"></a>web</h1><h1 id="window"><a href="#window" class="headerlink" title="window"></a>window</h1><h1 id="sql"><a href="#sql" class="headerlink" title="sql"></a>sql</h1><ul>
 <li><p>dfs</p>
-<pre><code>where�������磺 where userId != 4����ѯ����userIdΪ�յ�����
-ʹ��left joinʱע�⣬һ��Ҫʹ������������������Ϊɸѡ��������ʹ���ұ�����������Ϊɸѡ�����Ļ���
-���п��ܲ�ѯȱ�����ݣ���Ϊ�ұ��������ݿ���Ϊ�ա��磺
+<pre><code>where语句中如： where userId != 4并查询不出userId为空的数据
+使用left join时注意，一定要使用左表中列条件项作为筛选条件，若使用右表列条件项作为筛选条件的话，
+很有可能查询缺少数据，因为右表相关数据可能为空。如：
 
 select s.* from student s left join course c on s.courseId = c.id where s.courseId = 5;
 
-s.courseId = 5 ����ʹ�� c.id = 5 ���棬�����������ݡ�
+s.courseId = 5 不能使用 c.id = 5 代替，这样会少数据。
 `select * from city where city_id = &apos;12f&apos;;`
-��������д����Ȼ���Բ�ѯ������
-����ʱ���ڸ�ʽ�Ƽ�timestamp����datatime��ǰ��ռ4�ֽڣ�����ռ8�ֽڡ�
+上述这种写法依然可以查询出结果
+建表时日期格式推荐timestamp代替datatime，前者占4字节，后者占8字节。
 </code></pre></li>
 </ul>
 <h1 id="bug"><a href="#bug" class="headerlink" title="bug"></a>bug</h1><h1 id="jquery"><a href="#jquery" class="headerlink" title="jquery"></a>jquery</h1><ul>
-<li>jquery�������򡢸�ѡ������<pre><code>ʹĳһ��Ϊѡ����Ҫʹ��prop������attr��������Ч���磺
-�ѵ�һ��option����Ϊѡ�� ��һ����ѡ��Ϊѡ��
-$(��#provice��).find(��option��).eq(0).prop(��selected��, true);
-$(��input[name=check_test]��).eq(0).prop(��checked��, true);
+<li>jquery中下拉框、复选框问题<pre><code>使某一项为选中项要使用prop方法，attr方法不生效。如：
+把第一个option设置为选中 第一个复选框为选中
+$(”#provice”).find(”option”).eq(0).prop(”selected”, true);
+$(”input[name=check_test]”).eq(0).prop(”checked”, true);
 </code></pre></li>
 </ul>
   
@@ -259,11 +259,11 @@ $(��input[name=check_test]��).eq(0).prop(��checked��, true);
 		<ul class="clearfix">
 		
 			
-				<li><a href="/tags/J2EE/" title="J2EE">J2EE<sup>1</sup></a></li>
+				<li><a href="/tags/command/" title="command">command<sup>1</sup></a></li>
 			
 		
 			
-				<li><a href="/tags/command/" title="command">command<sup>1</sup></a></li>
+				<li><a href="/tags/J2EE/" title="J2EE">J2EE<sup>1</sup></a></li>
 			
 		
 			
