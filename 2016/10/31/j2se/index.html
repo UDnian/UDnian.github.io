@@ -11,34 +11,22 @@
     
 
     
-    <meta name="description" content="java
-Java是编译型语言还是解释型语言？Java源文件需要编译成.class文件才能在JVM中运行。.class中的字节码首先会被JVM解释，但在稍后即时（JIT）编译。
-所以java是编译型语言也是解释型语言。
-
-关于String逻辑运算符==常见错误
-12345678910111213141516private static String getA() &amp;#123;    return">
+    <meta name="description" content="javaJava是编译型语言还是解释型语言？        Java源文件需要编译成.class文件才能在JVM中运行。.class中的字节码首先会被JVM解释，但在稍后即时（JIT）编译。        所以java是编译型语言也是解释型语言。
+关于String逻辑运算符==常见错误12345678910111213141516private static String getA() &amp;#123">
 <meta property="og:type" content="article">
 <meta property="og:title" content="J2EE经验整合">
 <meta property="og:url" content="http://yoursite.com/2016/10/31/j2se/index.html">
 <meta property="og:site_name" content="UDnian blog">
-<meta property="og:description" content="java
-Java是编译型语言还是解释型语言？Java源文件需要编译成.class文件才能在JVM中运行。.class中的字节码首先会被JVM解释，但在稍后即时（JIT）编译。
-所以java是编译型语言也是解释型语言。
-
-关于String逻辑运算符==常见错误
-12345678910111213141516private static String getA() &amp;#123;    return">
+<meta property="og:description" content="javaJava是编译型语言还是解释型语言？        Java源文件需要编译成.class文件才能在JVM中运行。.class中的字节码首先会被JVM解释，但在稍后即时（JIT）编译。        所以java是编译型语言也是解释型语言。
+关于String逻辑运算符==常见错误12345678910111213141516private static String getA() &amp;#123">
 <meta property="og:image" content="http://yoursite.com/img/java.png">
 <meta property="og:image" content="http://yoursite.com/img/j2ee/e113.jpg">
 <meta property="og:image" content="http://yoursite.com/img/j2ee/my113.png">
-<meta property="og:updated_time" content="2016-11-22T03:25:48.428Z">
+<meta property="og:updated_time" content="2016-11-22T10:48:49.081Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="J2EE经验整合">
-<meta name="twitter:description" content="java
-Java是编译型语言还是解释型语言？Java源文件需要编译成.class文件才能在JVM中运行。.class中的字节码首先会被JVM解释，但在稍后即时（JIT）编译。
-所以java是编译型语言也是解释型语言。
-
-关于String逻辑运算符==常见错误
-12345678910111213141516private static String getA() &amp;#123;    return">
+<meta name="twitter:description" content="javaJava是编译型语言还是解释型语言？        Java源文件需要编译成.class文件才能在JVM中运行。.class中的字节码首先会被JVM解释，但在稍后即时（JIT）编译。        所以java是编译型语言也是解释型语言。
+关于String逻辑运算符==常见错误12345678910111213141516private static String getA() &amp;#123">
 <meta name="twitter:image" content="http://yoursite.com/img/java.png">
 
     
@@ -113,24 +101,16 @@ Java是编译型语言还是解释型语言？Java源文件需要编译成.class
 		<div id="toc" class="toc-article">
 			<strong class="toc-title">文章目录</strong>
 		
-			<ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#java"><span class="toc-number">1.</span> <span class="toc-text">java</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#eclipse-myeclipse"><span class="toc-number">2.</span> <span class="toc-text">eclipse/myeclipse</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#web"><span class="toc-number">3.</span> <span class="toc-text">web</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#window"><span class="toc-number">4.</span> <span class="toc-text">window</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#sql"><span class="toc-number">5.</span> <span class="toc-text">sql</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#bug"><span class="toc-number">6.</span> <span class="toc-text">bug</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#jquery"><span class="toc-number">7.</span> <span class="toc-text">jquery</span></a></li></ol>
+			<ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#java"><span class="toc-number">1.</span> <span class="toc-text">java</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#Java是编译型语言还是解释型语言？"><span class="toc-number">1.1.</span> <span class="toc-text">Java是编译型语言还是解释型语言？</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#关于String逻辑运算符-常见错误"><span class="toc-number">1.2.</span> <span class="toc-text">关于String逻辑运算符==常见错误</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#一定要空判断处理"><span class="toc-number">1.3.</span> <span class="toc-text">一定要空判断处理</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#变量A、B交换三种方式"><span class="toc-number">1.4.</span> <span class="toc-text">变量A、B交换三种方式</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#原生态类型-拆箱、装箱"><span class="toc-number">1.5.</span> <span class="toc-text">原生态类型-拆箱、装箱</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#new-Interface-与匿名类"><span class="toc-number">1.6.</span> <span class="toc-text">new Interface(){}与匿名类</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Array、List元素排序"><span class="toc-number">1.7.</span> <span class="toc-text">Array、List元素排序</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Jdk6-gt-jdk7改进细节"><span class="toc-number">1.8.</span> <span class="toc-text">Jdk6->jdk7改进细节</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#日期处理"><span class="toc-number">1.9.</span> <span class="toc-text">日期处理</span></a></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#eclipse-myeclipse"><span class="toc-number">2.</span> <span class="toc-text">eclipse/myeclipse</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#web"><span class="toc-number">3.</span> <span class="toc-text">web</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#Web项目页面放置情况"><span class="toc-number">3.1.</span> <span class="toc-text">Web项目页面放置情况</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Web项目绝对路径问题"><span class="toc-number">3.2.</span> <span class="toc-text">Web项目绝对路径问题</span></a></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#window"><span class="toc-number">4.</span> <span class="toc-text">window</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#window下查看和解决端口占用问题"><span class="toc-number">4.1.</span> <span class="toc-text">window下查看和解决端口占用问题</span></a></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#sql"><span class="toc-number">5.</span> <span class="toc-text">sql</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#mysql导出数据问题"><span class="toc-number">5.1.</span> <span class="toc-text">mysql导出数据问题</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#sql语句问题"><span class="toc-number">5.2.</span> <span class="toc-text">sql语句问题</span></a></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#bug"><span class="toc-number">6.</span> <span class="toc-text">bug</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#非常规代码问题bug"><span class="toc-number">6.1.</span> <span class="toc-text">非常规代码问题bug</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#一定要空判断处理-1"><span class="toc-number">6.2.</span> <span class="toc-text">一定要空判断处理</span></a></li></ol></li></ol>
 		
 		</div>
 		
-		<h1 id="java"><a href="#java" class="headerlink" title="java"></a>java</h1><ul>
-<li>Java是编译型语言还是解释型语言？<br><img src="/img/java.png" style="width: 50%;"><pre><code>Java源文件需要编译成.class文件才能在JVM中运行。.class中的字节码首先会被JVM解释，但在稍后即时（JIT）编译。
-所以java是编译型语言也是解释型语言。
-</code></pre></li>
-<li><p>关于String逻辑运算符==常见错误</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div></pre></td><td class="code"><pre><div class="line">private static String getA() &#123;</div><div class="line">    return &quot;a&quot;;</div><div class="line">&#125;</div><div class="line">public static void test2() &#123;</div><div class="line">    String a = &quot;a&quot;;</div><div class="line">    final String c = &quot;a&quot;;</div><div class="line">    String b = a + &quot;b&quot;;</div><div class="line">    String d = c + &quot;b&quot;;</div><div class="line">    String e = getA() + &quot;b&quot;;</div><div class="line">    String f = &quot;a&quot; + &quot;b&quot;;</div><div class="line">    String compare = &quot;ab&quot;;</div><div class="line">    System.out.println(b == compare);</div><div class="line">    System.out.println(d == compare);</div><div class="line">    System.out.println(e == compare);</div><div class="line">    System.out.println(f == compare);</div><div class="line">&#125;   //结果false/true/false/true</div></pre></td></tr></table></figure>
-</li>
-<li><p>一定要空判断处理</p>
-<pre><code>如用Map&lt;String, Object&gt; map = new HashMap&lt;String, Object&gt;();
+		<h1 id="java"><a href="#java" class="headerlink" title="java"></a>java</h1><h2 id="Java是编译型语言还是解释型语言？"><a href="#Java是编译型语言还是解释型语言？" class="headerlink" title="Java是编译型语言还是解释型语言？"></a>Java是编译型语言还是解释型语言？</h2><p><img src="/img/java.png" style="width: 50%;"><br>        Java源文件需要编译成.class文件才能在JVM中运行。.class中的字节码首先会被JVM解释，但在稍后即时（JIT）编译。<br>        所以java是编译型语言也是解释型语言。</p>
+<h2 id="关于String逻辑运算符-常见错误"><a href="#关于String逻辑运算符-常见错误" class="headerlink" title="关于String逻辑运算符==常见错误"></a>关于String逻辑运算符==常见错误</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div></pre></td><td class="code"><pre><div class="line">private static String getA() &#123;</div><div class="line">    return &quot;a&quot;;</div><div class="line">&#125;</div><div class="line">public static void test2() &#123;</div><div class="line">    String a = &quot;a&quot;;</div><div class="line">    final String c = &quot;a&quot;;</div><div class="line">    String b = a + &quot;b&quot;;</div><div class="line">    String d = c + &quot;b&quot;;</div><div class="line">    String e = getA() + &quot;b&quot;;</div><div class="line">    String f = &quot;a&quot; + &quot;b&quot;;</div><div class="line">    String compare = &quot;ab&quot;;</div><div class="line">    System.out.println(b == compare);</div><div class="line">    System.out.println(d == compare);</div><div class="line">    System.out.println(e == compare);</div><div class="line">    System.out.println(f == compare);</div><div class="line">&#125;   //结果false/true/false/true</div></pre></td></tr></table></figure>
+<h2 id="一定要空判断处理"><a href="#一定要空判断处理" class="headerlink" title="一定要空判断处理"></a>一定要空判断处理</h2><pre><code>如用Map&lt;String, Object&gt; map = new HashMap&lt;String, Object&gt;();
 String name = map.get(&quot;name&quot;);
 使用name前一定要空判断，否则会报空指针异常。
-</code></pre></li>
-<li><p>变量A、B交换三种方式</p>
-<pre><code>1. 使用中间量来实现
+</code></pre><h2 id="变量A、B交换三种方式"><a href="#变量A、B交换三种方式" class="headerlink" title="变量A、B交换三种方式"></a>变量A、B交换三种方式</h2><pre><code>1. 使用中间量来实现
         int temp = a;
         a = b;
         b = temp;
@@ -142,39 +122,67 @@ String name = map.get(&quot;name&quot;);
         a = a ^ b;
         b = a ^ b;
         a = a ^ b;
-</code></pre></li>
-<li><p>原生态类型-拆箱、装箱</p>
-<pre><code>原始数据类型：boolean、byte、short、char、int、float、long、double
-引用数据类型：Boolean、Byte、Short、Charest、Integer、Float、Long、Double
-</code></pre><ul>
-<li>装箱：<pre><code>若原生类型int赋值给Integer类型，就会将原始数据类型自动编译为Integer.valueOf(int); 称为装箱。
-</code></pre></li>
-<li><p>拆箱：</p>
-<pre><code>若引用类型Integer赋值给int类型，就会自动调用intValue()方法，称为拆箱。如果Integer对象为空，则抛空指针异常。
-</code></pre><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div></pre></td><td class="code"><pre><div class="line">Integer a = 1;</div><div class="line">Integer b = 1;</div><div class="line">Integer c = 200;</div><div class="line">Integer d = 200;</div><div class="line">System.out.println(a == b);</div><div class="line">System.out.println(c == d);</div><div class="line">//结果true false</div></pre></td></tr></table></figure>
-</li>
-<li><p>解析：<br>装箱时，Integer.valueOf(int)方法的源码如下：</p>
+</code></pre><h2 id="原生态类型-拆箱、装箱"><a href="#原生态类型-拆箱、装箱" class="headerlink" title="原生态类型-拆箱、装箱"></a>原生态类型-拆箱、装箱</h2><pre><code>    原始数据类型：boolean、byte、short、char、int、float、long、double
+    引用数据类型：Boolean、Byte、Short、Charest、Integer、Float、Long、Double
+* 装箱：
+        若原生类型int赋值给Integer类型，就会将原始数据类型自动编译为Integer.valueOf(int); 称为装箱。
+* 拆箱：
+        若引用类型Integer赋值给int类型，就会自动调用intValue()方法，称为拆箱。如果Integer对象为空，则抛空指针异常。
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div></pre></td><td class="code"><pre><div class="line">Integer a = 1;</div><div class="line">Integer b = 1;</div><div class="line">Integer c = 200;</div><div class="line">Integer d = 200;</div><div class="line">System.out.println(a == b);</div><div class="line">System.out.println(c == d);</div><div class="line">//结果true false</div></pre></td></tr></table></figure>
+
+* 解析：
+装箱时，Integer.valueOf(int)方法的源码如下：
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div></pre></td><td class="code"><pre><div class="line">public static Integer valueOf(int i) &#123;</div><div class="line">    final int offset = 128;</div><div class="line">    if (i &gt;= -128 &amp;&amp; i &lt;= 127) &#123; // must cache </div><div class="line">            return IntegerCache.cache[i + offset];</div><div class="line">    &#125;</div><div class="line">    return new Integer(i);</div><div class="line">&#125;</div></pre></td></tr></table></figure>
-</li>
-</ul>
-</li>
-</ul>
-<pre><code>Short、Long两种类型的cache范围为-128~127，所以也会出现类似情况。
-Byte的256个值和Boolean的两个值全部cache在内存中，所以总会是true。
-Float、Double没有cache，所以总会是false。
-</code></pre><ul>
-<li><p>new Interface(){}与匿名类</p>
-<ul>
-<li><p>接口：</p>
+
+
+    Short、Long两种类型的cache范围为-128~127，所以也会出现类似情况。
+    Byte的256个值和Boolean的两个值全部cache在内存中，所以总会是true。
+    Float、Double没有cache，所以总会是false。
+</code></pre><h2 id="new-Interface-与匿名类"><a href="#new-Interface-与匿名类" class="headerlink" title="new Interface(){}与匿名类"></a>new Interface(){}与匿名类</h2><pre><code>* 接口：
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line">public interface GoSchool &#123;</div><div class="line">    public void walk();</div><div class="line">    public void run();</div><div class="line">&#125;</div></pre></td></tr></table></figure>
-</li>
-<li><p>测试类的main方法：</p>
+
+* 测试类的main方法：
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div></pre></td><td class="code"><pre><div class="line">public static void main(String[] args) &#123;</div><div class="line">    GoSchool go = new GoSchool() &#123;</div><div class="line">        public void walk() &#123;</div><div class="line">            System.out.println(&quot;walking...&quot;);</div><div class="line">        &#125;</div><div class="line">        public void run() &#123;</div><div class="line">            System.out.println(&quot;runing...&quot;);</div><div class="line">        &#125;</div><div class="line">    &#125;;</div><div class="line">    go.walk();</div><div class="line">&#125;</div></pre></td></tr></table></figure>
+</code></pre><h2 id="Array、List元素排序"><a href="#Array、List元素排序" class="headerlink" title="Array、List元素排序"></a>Array、List元素排序</h2><pre><code><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">Arrays.sort(int[] arr) // 数组排序(升序)，参数可以为任意类型数组</div></pre></td></tr></table></figure>
+
+tip: 汉字不能正常排序
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">Collections.sort(List list) // 列表排序(升序)</div></pre></td></tr></table></figure>
+
+* 如果排序为对象列表，按照对象的某些属性排序：
+    -  第一种方式：
+    <figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div><div class="line">27</div><div class="line">28</div><div class="line">29</div><div class="line">30</div><div class="line">31</div><div class="line">32</div><div class="line">33</div><div class="line">34</div><div class="line">35</div><div class="line">36</div><div class="line">37</div><div class="line">38</div></pre></td><td class="code"><pre><div class="line">//实现Comparable接口，重写compareTo方法</div><div class="line">public class UserModel implements Comparable&lt;UserModel&gt;&#123;</div><div class="line">    private Integer id;</div><div class="line">    private String userName;</div><div class="line">    public UserModel(Integer id, String userName) &#123;</div><div class="line">        this.id = id;</div><div class="line">        this.userName = userName;</div><div class="line">    &#125;</div><div class="line">    //先按照id排序，再按名字排序</div><div class="line">    public int compareTo(UserModel u) &#123;</div><div class="line">        if(u != null &amp;&amp; u instanceof UserModel) &#123;</div><div class="line">            if(this.id &lt; u.id) &#123;</div><div class="line">                return -1;</div><div class="line">            &#125;</div><div class="line">            if(this.id &gt; u.id) &#123;</div><div class="line">                return 1;</div><div class="line">            &#125;</div><div class="line">            if(this.userName.compareTo(u.userName) &lt; 0) &#123;</div><div class="line">                return -1;</div><div class="line">            &#125;</div><div class="line">            if(this.userName.compareTo(u.userName) &gt; 0) &#123;</div><div class="line">                return 1;</div><div class="line">            &#125;</div><div class="line">        &#125;</div><div class="line">        return 0;</div><div class="line">    &#125;</div><div class="line">&#125;</div><div class="line"></div><div class="line">//测试类main方法：</div><div class="line">UserModel u1 = new UserModel(4, &quot;兴&quot;);</div><div class="line">UserModel u2 = new UserModel(2, &quot;c&quot;);</div><div class="line">UserModel u3 = new UserModel(2, &quot;b&quot;);</div><div class="line">ArrayList&lt;UserModel&gt; list = new ArrayList&lt;UserModel&gt;();</div><div class="line">list.add(u1);</div><div class="line">list.add(u2);</div><div class="line">list.add(u3);</div><div class="line">Collections.sort(list);</div><div class="line">//数字在前，其次英文，最后汉字。</div></pre></td></tr></table></figure>
+
+    -  第二种方式：
+        范型UserModel类未实现Comparable接口，当然也没重写其compareTo方法。
+        <figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div></pre></td><td class="code"><pre><div class="line">//匿名内部类，通过接口实现</div><div class="line">Comparator&lt;UserModel&gt; comparator = new Comparator&lt;UserModel&gt;() &#123;</div><div class="line">    public int compare(UserModel u1, UserModel u2) &#123;</div><div class="line">        if(u1.getId() &lt; u2.getId()) &#123;</div><div class="line">            return -1;</div><div class="line">        &#125;</div><div class="line">        if(u1.getId() &gt; u2.getId()) &#123;</div><div class="line">            return 1;</div><div class="line">        &#125;</div><div class="line">        if(u1.getUserName().compareTo(u2.getUserName()) &lt; 0) &#123;</div><div class="line">            return -1;</div><div class="line">        &#125;</div><div class="line">        if(u1.getUserName().compareTo(u2.getUserName()) &gt; 0) &#123;</div><div class="line">            return 1;</div><div class="line">        &#125;</div><div class="line">        return 0;</div><div class="line">    &#125;</div><div class="line">&#125;;</div><div class="line"></div><div class="line">Collections.sort(list, comparator);</div></pre></td></tr></table></figure>
+
+        &lt;b&gt;tip: 推荐使用第二种方法，使比较方式与Model分开。&lt;/b&gt;
+* 中文排序
+    <figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div></pre></td><td class="code"><pre><div class="line">private final static Comparator CHINA_COMPARE = Collator.getInstance(java.util.Locale.CHINA);</div><div class="line">public static void main(String[] args) &#123;</div><div class="line">    List&lt;String&gt; list = Arrays.asList(&quot;霜&quot;, &quot;的&quot;, &quot;有&quot;, &quot;仓&quot;, &quot;bb&quot;);</div><div class="line">    for(String s : list) &#123;</div><div class="line">        System.out.print(s + &quot;,&quot;);</div><div class="line">    &#125;</div><div class="line">    Collections.sort(list, CHINA_COMPARE);</div><div class="line">&#125;</div></pre></td></tr></table></figure>
+</code></pre><h2 id="Jdk6-gt-jdk7改进细节"><a href="#Jdk6-gt-jdk7改进细节" class="headerlink" title="Jdk6-&gt;jdk7改进细节"></a>Jdk6-&gt;jdk7改进细节</h2><ul>
+<li><p>数字可以使用 _ 分隔符</p>
+  <figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">long l = 2_235_898L; // 加入分隔符为了使数字更易读。</div></pre></td></tr></table></figure>
+</li>
+<li><p>switch  case语法</p>
+<p>  jdk6版本前switch(…)    参数只能是byte、short、int、char(也可以是对应有封装类型)或枚举常量。<br>  Jdk7规范中增加了String参数，毕竟它也是常量类型。</p>
+</li>
+<li><p>泛型（钻石语法）</p>
+<p>  以前写法：</p>
+  <figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">Map&lt;Integer, Map&lt;String, String&gt;&gt; map = new HashMap&lt;Integer, Map&lt;String, String&gt;&gt;();</div></pre></td></tr></table></figure>
+<p>  JDK7 写法：</p>
+  <figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">Map&lt;Integer, Map&lt;String, String&gt;&gt; map = new HashMap&lt;&gt;();</div></pre></td></tr></table></figure>
+<p>  主要为简略代码。</p>
 </li>
 </ul>
-</li>
-</ul>
-<h1 id="eclipse-myeclipse"><a href="#eclipse-myeclipse" class="headerlink" title="eclipse/myeclipse"></a>eclipse/myeclipse</h1><ul>
+<h2 id="日期处理"><a href="#日期处理" class="headerlink" title="日期处理"></a>日期处理</h2><pre><code>Java中对日期的处理三个大类：
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">java.util.Calendar;</div><div class="line">java.util.Date;</div><div class="line">java.text.SimpleDateFormat（DateFormat的子类）;</div></pre></td></tr></table></figure>
+
+Calendar主要对日期进行计算、设置等操作。
+DateFormat主要对日期进行格式输出显示。
+
+实例应用：
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div></pre></td><td class="code"><pre><div class="line">//取得当前日期</div><div class="line">Date dateCurrent = new Date();</div><div class="line">//格式化日期</div><div class="line">SimpleDateFormat sdf = new SimpleDateFormat(&quot;yyyy-MM-dd HH:mm:ss&quot;);</div><div class="line">System.out.println(dateCurrent);</div><div class="line">//Thu Jan 15 16:22:08 CST 2015</div><div class="line">System.out.println(sdf.format(dateCurrent));</div><div class="line">//2015-01-15 16:22:08</div><div class="line">//把相应字符串形式的日期转换为日期类型Date(抛异常)</div><div class="line">Date myDate = sdf.parse(&quot;2015-01-15 15:07:00&quot;);</div><div class="line">System.out.println(myDate);</div><div class="line">//Thu Jan 15 15:07:00 CST 2015</div><div class="line">//构造一个带有默认时区和语言环境的 Calendar</div><div class="line">Calendar calendar = Calendar.getInstance();</div><div class="line">//将Date类型设置到Calendar对象中</div><div class="line">calendar.setTime(myDate);</div><div class="line">//将日期的日设置为17号</div><div class="line">calendar.set(Calendar.DAY_OF_MONTH, 17);</div><div class="line">//获取日期的日并打印</div><div class="line">System.out.println(calendar.get(Calendar.DAY_OF_MONTH));</div><div class="line">//将Calendar对象转换成Date对象</div><div class="line">Date d = calendar.getTime();</div></pre></td></tr></table></figure>
+</code></pre><h1 id="eclipse-myeclipse"><a href="#eclipse-myeclipse" class="headerlink" title="eclipse/myeclipse"></a>eclipse/myeclipse</h1><ul>
 <li>myeclipse中若新增插件处理<pre><code>删除\eclipse\configuration\org.eclipse.update下的platform.xml文件，重启。
 </code></pre></li>
 <li>eclipse工具navigate视图文件不提示错误<pre><code>目前测试下eclipse只有版本：3.5、3.6才会支持navigate视图下提示文件错误，即若文件出现编译错误时，文件上面会显示小红叉。
@@ -183,9 +191,29 @@ Float、Double没有cache，所以总会是false。
 下面从常用工具eclipse、myeclipse给出解决方案。
 </code></pre><img src="/img/j2ee/e113.jpg" style="width: 50%;"><br><img src="/img/j2ee/my113.png" style="width: 50%;"></li>
 </ul>
-<h1 id="web"><a href="#web" class="headerlink" title="web"></a>web</h1><h1 id="window"><a href="#window" class="headerlink" title="window"></a>window</h1><h1 id="sql"><a href="#sql" class="headerlink" title="sql"></a>sql</h1><ul>
-<li><p>dfs</p>
-<pre><code>where语句中如： where userId != 4并查询不出userId为空的数据
+<h1 id="web"><a href="#web" class="headerlink" title="web"></a>web</h1><h2 id="Web项目页面放置情况"><a href="#Web项目页面放置情况" class="headerlink" title="Web项目页面放置情况"></a>Web项目页面放置情况</h2><pre><code>为提高系统的安全性，页面一般放在WebRoot-&gt;WEB-INF目录下面。
+因为WEB-INF目录下面的页面文件只能通过servlet/action访问，不能直接通过url访问。
+</code></pre><h2 id="Web项目绝对路径问题"><a href="#Web项目绝对路径问题" class="headerlink" title="Web项目绝对路径问题"></a>Web项目绝对路径问题</h2><pre><code>一般使用：
+Thread.currentThread().getContextClassLoader().getResource(&quot;&quot;);
+//file:/D:/Workspaces/MyEclipse8.5/HelloWorld/WebRoot/WEB-INF/classes/
+配置文件中：如
+&lt;value&gt;classpath:/context/path.properties&lt;/value&gt;
+&lt;value&gt;file:/ty/android/yuanchuang/db.properties&lt;/value&gt;
+第一种相当于src目录。第二种相当于硬盘。
+</code></pre><h1 id="window"><a href="#window" class="headerlink" title="window"></a>window</h1><h2 id="window下查看和解决端口占用问题"><a href="#window下查看和解决端口占用问题" class="headerlink" title="window下查看和解决端口占用问题"></a>window下查看和解决端口占用问题</h2><pre><code>命令行终端下
+查看占用此端口下的进程
+netstat -aon | find ”20880”
+TCP  0.0.0.0:20880   0.0.0.0:0   LISTENING  10824(进程号)
+查看并杀死相关进程
+tasklist | findstr ”10824”
+taskkill 10824
+杀掉java 进程
+taskkill /f /t /im javaw.exe
+</code></pre><h1 id="sql"><a href="#sql" class="headerlink" title="sql"></a>sql</h1><h2 id="mysql导出数据问题"><a href="#mysql导出数据问题" class="headerlink" title="mysql导出数据问题"></a>mysql导出数据问题</h2><pre><code>使用Navicat导出数据
+直接右键表名-&gt;转储sql文件：问题：数据全部按字符数据导出。带有引号。
+使用select先查询出需要导出的数据-&gt;点击工具栏中的导出向导，保存sql文件。
+问题：sql语句中表名缺失。
+</code></pre><h2 id="sql语句问题"><a href="#sql语句问题" class="headerlink" title="sql语句问题"></a>sql语句问题</h2><pre><code>where语句中如： where userId != 4并查询不出userId为空的数据
 使用left join时注意，一定要使用左表中列条件项作为筛选条件，若使用右表列条件项作为筛选条件的话，
 很有可能查询缺少数据，因为右表相关数据可能为空。如：
 
@@ -195,16 +223,12 @@ s.courseId = 5 不能使用 c.id = 5 代替，这样会少数据。
 `select * from city where city_id = &apos;12f&apos;;`
 上述这种写法依然可以查询出结果
 建表时日期格式推荐timestamp代替datatime，前者占4字节，后者占8字节。
-</code></pre></li>
-</ul>
-<h1 id="bug"><a href="#bug" class="headerlink" title="bug"></a>bug</h1><h1 id="jquery"><a href="#jquery" class="headerlink" title="jquery"></a>jquery</h1><ul>
-<li>jquery中下拉框、复选框问题<pre><code>使某一项为选中项要使用prop方法，attr方法不生效。如：
-把第一个option设置为选中 第一个复选框为选中
-$(”#provice”).find(”option”).eq(0).prop(”selected”, true);
-$(”input[name=check_test]”).eq(0).prop(”checked”, true);
-</code></pre></li>
-</ul>
-  
+</code></pre><h1 id="bug"><a href="#bug" class="headerlink" title="bug"></a>bug</h1><h2 id="非常规代码问题bug"><a href="#非常规代码问题bug" class="headerlink" title="非常规代码问题bug"></a>非常规代码问题bug</h2><pre><code>修改代码后未重新编译
+数据传输过程中转码字符集问题
+</code></pre><h2 id="一定要空判断处理-1"><a href="#一定要空判断处理-1" class="headerlink" title="一定要空判断处理"></a>一定要空判断处理</h2><pre><code>如用Map&lt;String, Object&gt; map = new HashMap&lt;String, Object&gt;();
+String name = map.get(&quot;name&quot;);
+使用name前一定要空判断，否则会报空指针异常。
+</code></pre>  
 	</div>
 		<footer class="article-footer clearfix">
 <div class="article-catetags">
@@ -309,6 +333,10 @@ $(”input[name=check_test]”).eq(0).prop(”checked”, true);
 		<ul class="clearfix">
 		
 			
+				<li><a href="/tags/java/" title="java">java<sup>1</sup></a></li>
+			
+		
+			
 				<li><a href="/tags/command/" title="command">command<sup>1</sup></a></li>
 			
 		
@@ -318,10 +346,6 @@ $(”input[name=check_test]”).eq(0).prop(”checked”, true);
 		
 			
 				<li><a href="/tags/mayi/" title="mayi">mayi<sup>1</sup></a></li>
-			
-		
-			
-				<li><a href="/tags/java/" title="java">java<sup>1</sup></a></li>
 			
 		
 		</ul>
