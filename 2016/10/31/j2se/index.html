@@ -12,39 +12,34 @@
 
     
     <meta name="description" content="java
-一定要空判断处理如用Map&amp;lt;String, Object&amp;gt; map = new HashMap&amp;lt;String, Object&amp;gt;();
-String name = map.get(&amp;quot;name&amp;quot;);
-使用name前一定要空判断，否则会报空指针异常。
+Java是编译型语言还是解释型语言？Java源文件需要编译成.class文件才能在JVM中运行。.class中的字节码首先会被JVM解释，但在稍后即时（JIT）编译。
+所以java是编译型语言也是解释型语言。
 
-
-eclipse/myeclipse
-myeclipse中若新增插件处理删除\eclipse\co">
+关于String逻辑运算符==常见错误
+12345678910111213141516private static String getA() &amp;#123;    return">
 <meta property="og:type" content="article">
 <meta property="og:title" content="J2EE经验整合">
 <meta property="og:url" content="http://yoursite.com/2016/10/31/j2se/index.html">
 <meta property="og:site_name" content="UDnian blog">
 <meta property="og:description" content="java
-一定要空判断处理如用Map&amp;lt;String, Object&amp;gt; map = new HashMap&amp;lt;String, Object&amp;gt;();
-String name = map.get(&amp;quot;name&amp;quot;);
-使用name前一定要空判断，否则会报空指针异常。
+Java是编译型语言还是解释型语言？Java源文件需要编译成.class文件才能在JVM中运行。.class中的字节码首先会被JVM解释，但在稍后即时（JIT）编译。
+所以java是编译型语言也是解释型语言。
 
-
-eclipse/myeclipse
-myeclipse中若新增插件处理删除\eclipse\co">
+关于String逻辑运算符==常见错误
+12345678910111213141516private static String getA() &amp;#123;    return">
+<meta property="og:image" content="http://yoursite.com/img/java.png">
 <meta property="og:image" content="http://yoursite.com/img/j2ee/e113.jpg">
 <meta property="og:image" content="http://yoursite.com/img/j2ee/my113.png">
-<meta property="og:updated_time" content="2016-11-04T12:41:17.656Z">
+<meta property="og:updated_time" content="2016-11-22T03:25:48.428Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="J2EE经验整合">
 <meta name="twitter:description" content="java
-一定要空判断处理如用Map&amp;lt;String, Object&amp;gt; map = new HashMap&amp;lt;String, Object&amp;gt;();
-String name = map.get(&amp;quot;name&amp;quot;);
-使用name前一定要空判断，否则会报空指针异常。
+Java是编译型语言还是解释型语言？Java源文件需要编译成.class文件才能在JVM中运行。.class中的字节码首先会被JVM解释，但在稍后即时（JIT）编译。
+所以java是编译型语言也是解释型语言。
 
-
-eclipse/myeclipse
-myeclipse中若新增插件处理删除\eclipse\co">
-<meta name="twitter:image" content="http://yoursite.com/img/j2ee/e113.jpg">
+关于String逻辑运算符==常见错误
+12345678910111213141516private static String getA() &amp;#123;    return">
+<meta name="twitter:image" content="http://yoursite.com/img/java.png">
 
     
     <link rel="alternative" href="atom.xml" title="UDnian blog" type="application/atom+xml">
@@ -123,10 +118,61 @@ myeclipse中若新增插件处理删除\eclipse\co">
 		</div>
 		
 		<h1 id="java"><a href="#java" class="headerlink" title="java"></a>java</h1><ul>
-<li>一定要空判断处理<pre><code>如用Map&lt;String, Object&gt; map = new HashMap&lt;String, Object&gt;();
+<li>Java是编译型语言还是解释型语言？<br><img src="/img/java.png" style="width: 50%;"><pre><code>Java源文件需要编译成.class文件才能在JVM中运行。.class中的字节码首先会被JVM解释，但在稍后即时（JIT）编译。
+所以java是编译型语言也是解释型语言。
+</code></pre></li>
+<li><p>关于String逻辑运算符==常见错误</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div></pre></td><td class="code"><pre><div class="line">private static String getA() &#123;</div><div class="line">    return &quot;a&quot;;</div><div class="line">&#125;</div><div class="line">public static void test2() &#123;</div><div class="line">    String a = &quot;a&quot;;</div><div class="line">    final String c = &quot;a&quot;;</div><div class="line">    String b = a + &quot;b&quot;;</div><div class="line">    String d = c + &quot;b&quot;;</div><div class="line">    String e = getA() + &quot;b&quot;;</div><div class="line">    String f = &quot;a&quot; + &quot;b&quot;;</div><div class="line">    String compare = &quot;ab&quot;;</div><div class="line">    System.out.println(b == compare);</div><div class="line">    System.out.println(d == compare);</div><div class="line">    System.out.println(e == compare);</div><div class="line">    System.out.println(f == compare);</div><div class="line">&#125;   //结果false/true/false/true</div></pre></td></tr></table></figure>
+</li>
+<li><p>一定要空判断处理</p>
+<pre><code>如用Map&lt;String, Object&gt; map = new HashMap&lt;String, Object&gt;();
 String name = map.get(&quot;name&quot;);
 使用name前一定要空判断，否则会报空指针异常。
 </code></pre></li>
+<li><p>变量A、B交换三种方式</p>
+<pre><code>1. 使用中间量来实现
+        int temp = a;
+        a = b;
+        b = temp;
+2. 数据叠加后再减回来（可能存在越界问题）
+        a = a + b;
+        b = a - b;
+        a = a - b;
+3. 异或运算
+        a = a ^ b;
+        b = a ^ b;
+        a = a ^ b;
+</code></pre></li>
+<li><p>原生态类型-拆箱、装箱</p>
+<pre><code>原始数据类型：boolean、byte、short、char、int、float、long、double
+引用数据类型：Boolean、Byte、Short、Charest、Integer、Float、Long、Double
+</code></pre><ul>
+<li>装箱：<pre><code>若原生类型int赋值给Integer类型，就会将原始数据类型自动编译为Integer.valueOf(int); 称为装箱。
+</code></pre></li>
+<li><p>拆箱：</p>
+<pre><code>若引用类型Integer赋值给int类型，就会自动调用intValue()方法，称为拆箱。如果Integer对象为空，则抛空指针异常。
+</code></pre><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div></pre></td><td class="code"><pre><div class="line">Integer a = 1;</div><div class="line">Integer b = 1;</div><div class="line">Integer c = 200;</div><div class="line">Integer d = 200;</div><div class="line">System.out.println(a == b);</div><div class="line">System.out.println(c == d);</div><div class="line">//结果true false</div></pre></td></tr></table></figure>
+</li>
+<li><p>解析：<br>装箱时，Integer.valueOf(int)方法的源码如下：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div></pre></td><td class="code"><pre><div class="line">public static Integer valueOf(int i) &#123;</div><div class="line">    final int offset = 128;</div><div class="line">    if (i &gt;= -128 &amp;&amp; i &lt;= 127) &#123; // must cache </div><div class="line">            return IntegerCache.cache[i + offset];</div><div class="line">    &#125;</div><div class="line">    return new Integer(i);</div><div class="line">&#125;</div></pre></td></tr></table></figure>
+</li>
+</ul>
+</li>
+</ul>
+<pre><code>Short、Long两种类型的cache范围为-128~127，所以也会出现类似情况。
+Byte的256个值和Boolean的两个值全部cache在内存中，所以总会是true。
+Float、Double没有cache，所以总会是false。
+</code></pre><ul>
+<li><p>new Interface(){}与匿名类</p>
+<ul>
+<li><p>接口：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line">public interface GoSchool &#123;</div><div class="line">    public void walk();</div><div class="line">    public void run();</div><div class="line">&#125;</div></pre></td></tr></table></figure>
+</li>
+<li><p>测试类的main方法：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div></pre></td><td class="code"><pre><div class="line">public static void main(String[] args) &#123;</div><div class="line">    GoSchool go = new GoSchool() &#123;</div><div class="line">        public void walk() &#123;</div><div class="line">            System.out.println(&quot;walking...&quot;);</div><div class="line">        &#125;</div><div class="line">        public void run() &#123;</div><div class="line">            System.out.println(&quot;runing...&quot;);</div><div class="line">        &#125;</div><div class="line">    &#125;;</div><div class="line">    go.walk();</div><div class="line">&#125;</div></pre></td></tr></table></figure>
+</li>
+</ul>
+</li>
 </ul>
 <h1 id="eclipse-myeclipse"><a href="#eclipse-myeclipse" class="headerlink" title="eclipse/myeclipse"></a>eclipse/myeclipse</h1><ul>
 <li>myeclipse中若新增插件处理<pre><code>删除\eclipse\configuration\org.eclipse.update下的platform.xml文件，重启。
@@ -246,6 +292,10 @@ $(”input[name=check_test]”).eq(0).prop(”checked”, true);
 		  
 		
 		  
+			<li><a href="/categories/java/" title="java">java<sup>1</sup></a></li>
+		  
+		
+		  
 			<li><a href="/categories/work/" title="work">work<sup>1</sup></a></li>
 		  
 		
@@ -268,6 +318,10 @@ $(”input[name=check_test]”).eq(0).prop(”checked”, true);
 		
 			
 				<li><a href="/tags/mayi/" title="mayi">mayi<sup>1</sup></a></li>
+			
+		
+			
+				<li><a href="/tags/java/" title="java">java<sup>1</sup></a></li>
 			
 		
 		</ul>
