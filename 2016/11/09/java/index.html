@@ -11,16 +11,28 @@
     
 
     
-    <meta name="description" content="tags: commandcategory: J2EE">
+    <meta name="description" content="代码清洁之道类名类名和对象应该是名词或名词短语，如Customer、WikiPage、Account。避免Manager、Data、Info。类名不应当是动词。
+方法名方法名应当是动词或动词短语，如postPayment、deletePage、sava，或 依Javabean标准加上get、set、is前缀。
+函数规则函数的第一规则是短小，第二规则还是短小；
+只做一件事；
+每个函数一个抽象层级；">
 <meta property="og:type" content="article">
 <meta property="og:title" content="java">
 <meta property="og:url" content="http://yoursite.com/2016/11/09/java/index.html">
 <meta property="og:site_name" content="UDnian blog">
-<meta property="og:description" content="tags: commandcategory: J2EE">
-<meta property="og:updated_time" content="2016-11-09T00:15:15.696Z">
+<meta property="og:description" content="代码清洁之道类名类名和对象应该是名词或名词短语，如Customer、WikiPage、Account。避免Manager、Data、Info。类名不应当是动词。
+方法名方法名应当是动词或动词短语，如postPayment、deletePage、sava，或 依Javabean标准加上get、set、is前缀。
+函数规则函数的第一规则是短小，第二规则还是短小；
+只做一件事；
+每个函数一个抽象层级；">
+<meta property="og:updated_time" content="2016-11-29T04:46:15.260Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="java">
-<meta name="twitter:description" content="tags: commandcategory: J2EE">
+<meta name="twitter:description" content="代码清洁之道类名类名和对象应该是名词或名词短语，如Customer、WikiPage、Account。避免Manager、Data、Info。类名不应当是动词。
+方法名方法名应当是动词或动词短语，如postPayment、deletePage、sava，或 依Javabean标准加上get、set、is前缀。
+函数规则函数的第一规则是短小，第二规则还是短小；
+只做一件事；
+每个函数一个抽象层级；">
 
     
     <link rel="alternative" href="atom.xml" title="UDnian blog" type="application/atom+xml">
@@ -94,12 +106,22 @@
 		<div id="toc" class="toc-article">
 			<strong class="toc-title">文章目录</strong>
 		
-			
+			<ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#代码清洁之道"><span class="toc-number">1.</span> <span class="toc-text">代码清洁之道</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#类名"><span class="toc-number">1.1.</span> <span class="toc-text">类名</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#方法名"><span class="toc-number">1.2.</span> <span class="toc-text">方法名</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#函数规则"><span class="toc-number">1.3.</span> <span class="toc-text">函数规则</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#做有意义的区分"><span class="toc-number">1.4.</span> <span class="toc-text">做有意义的区分</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#使用可搜索易读名称"><span class="toc-number">1.5.</span> <span class="toc-text">使用可搜索易读名称</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#抽离Try-Catch代码块"><span class="toc-number">1.6.</span> <span class="toc-text">抽离Try/Catch代码块</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#方法别返回null值"><span class="toc-number">1.7.</span> <span class="toc-text">方法别返回null值</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#方法别传递null值"><span class="toc-number">1.8.</span> <span class="toc-text">方法别传递null值</span></a></li></ol></li></ol>
 		
 		</div>
 		
-		<p>tags: command<br>category: J2EE</p>
-  
+		<h1 id="代码清洁之道"><a href="#代码清洁之道" class="headerlink" title="代码清洁之道"></a>代码清洁之道</h1><h2 id="类名"><a href="#类名" class="headerlink" title="类名"></a>类名</h2><pre><code>类名和对象应该是名词或名词短语，如Customer、WikiPage、Account。避免Manager、Data、Info。类名不应当是动词。
+</code></pre><h2 id="方法名"><a href="#方法名" class="headerlink" title="方法名"></a>方法名</h2><pre><code>方法名应当是动词或动词短语，如postPayment、deletePage、sava，或 依Javabean标准加上get、set、is前缀。
+</code></pre><h2 id="函数规则"><a href="#函数规则" class="headerlink" title="函数规则"></a>函数规则</h2><pre><code>函数的第一规则是短小，第二规则还是短小；
+只做一件事；
+每个函数一个抽象层级；
+</code></pre><h2 id="做有意义的区分"><a href="#做有意义的区分" class="headerlink" title="做有意义的区分"></a>做有意义的区分</h2><pre><code><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div></pre></td><td class="code"><pre><div class="line">public static void copyChars(char a1[], char a2[]) &#123;</div><div class="line">    // ...</div><div class="line">&#125;</div><div class="line"></div><div class="line">public static void copyChars(char source[], char destination[]) &#123;</div><div class="line">    // ...</div><div class="line">&#125;</div></pre></td></tr></table></figure>
+</code></pre><h2 id="使用可搜索易读名称"><a href="#使用可搜索易读名称" class="headerlink" title="使用可搜索易读名称"></a>使用可搜索易读名称</h2><pre><code><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line">final int ONLINE_STATE = 1;8</div><div class="line">if (state = ONLINE_STATE) &#123;</div><div class="line">    //...</div><div class="line">&#125;</div></pre></td></tr></table></figure>
+</code></pre><h2 id="抽离Try-Catch代码块"><a href="#抽离Try-Catch代码块" class="headerlink" title="抽离Try/Catch代码块"></a>抽离Try/Catch代码块</h2><pre><code>Try/Catch代码块丑陋不堪。他们搞乱了代码结构，把错误处理与正常流程混为一谈。最好把些代码块的主体部分抽离出来，另外形成函数。
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div></pre></td><td class="code"><pre><div class="line">public void delete(Page page) &#123;</div><div class="line">    try &#123;</div><div class="line">        deletePageAndAllReferences(page);</div><div class="line">    &#125; catch (Exception e) &#123;</div><div class="line">        logError(e);</div><div class="line">    &#125;</div><div class="line">&#125;</div><div class="line"></div><div class="line">private void deletePageAndAllReferences(Page page) throws Exception &#123;</div><div class="line">    // ...</div><div class="line">&#125;</div><div class="line"></div><div class="line">private void logError(Exception e) &#123;</div><div class="line">    logger.log(e.getMessage());</div><div class="line">&#125;</div></pre></td></tr></table></figure>
+
+如果关键字try在某个函数中存在，它就该是这个函数的第一个单词，而且在catch/finally 代码块后面也不该有其他内容。
+</code></pre><h2 id="方法别返回null值"><a href="#方法别返回null值" class="headerlink" title="方法别返回null值"></a>方法别返回null值</h2><h2 id="方法别传递null值"><a href="#方法别传递null值" class="headerlink" title="方法别传递null值"></a>方法别传递null值</h2>  
 	</div>
 		<footer class="article-footer clearfix">
 <div class="article-catetags">
@@ -204,15 +226,11 @@
 		<ul class="clearfix">
 		
 			
-				<li><a href="/tags/command/" title="command">command<sup>1</sup></a></li>
-			
-		
-			
 				<li><a href="/tags/J2EE/" title="J2EE">J2EE<sup>1</sup></a></li>
 			
 		
 			
-				<li><a href="/tags/jQuery/" title="jQuery">jQuery<sup>1</sup></a></li>
+				<li><a href="/tags/java/" title="java">java<sup>1</sup></a></li>
 			
 		
 			
@@ -220,7 +238,11 @@
 			
 		
 			
-				<li><a href="/tags/java/" title="java">java<sup>1</sup></a></li>
+				<li><a href="/tags/command/" title="command">command<sup>1</sup></a></li>
+			
+		
+			
+				<li><a href="/tags/jQuery/" title="jQuery">jQuery<sup>1</sup></a></li>
 			
 		
 		</ul>
