@@ -21,7 +21,7 @@
 <meta property="og:description" content="mayi项目部署路径
 线上duanzu/data/online/new_mayi/workspace/duanzu/WEB-INF/classes/com/mayi/duanzu//data/online/new_mayi/workspace/duanzu/WEB-INF/view
 线上mis/data/online/mis/workspace/duanzu/WEB-INF/classes/com">
-<meta property="og:updated_time" content="2016-11-22T03:14:04.004Z">
+<meta property="og:updated_time" content="2016-12-08T02:07:19.156Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="work">
 <meta name="twitter:description" content="mayi项目部署路径
@@ -115,6 +115,12 @@
 pre 26 22 /data/static/preview
 preview1 26 22 /data/static/preview1
 test 65.3 /data/static/new_mayi
+</code></pre><p>  <b style="color: red">Tips: 以下相关wap静态js包含定量，不能随意替换线上</b></p>
+  <figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div></pre></td><td class="code"><pre><div class="line">/resourcesWap/js/main.js</div><div class="line">/resourcesWap/v2015/js/main.js</div><div class="line">/resourcesWap/js/c.js</div><div class="line"></div><div class="line">var localHost = &quot;//m.mayi.com&quot;;</div><div class="line">var serviceUrl = &quot;//m.mayi.com&quot;;</div></pre></td></tr></table></figure>
+</li>
+<li><p>静态域</p>
+<pre><code>pre：  http://staticnewpre.mayi.com/
+online:   http://staticnew.mayi.com/
 </code></pre></li>
 <li><p>日志</p>
 <pre><code>/data/online/mis/jetty-9.2.17/logs/2016_09_23.stderrout.log
@@ -145,8 +151,13 @@ test 65.3 /data/static/new_mayi
 </code></pre></li>
 <li>访问web02<pre><code>172.16.16.22:8099
 </code></pre></li>
-<li>重启web01<pre><code>./change_nginx1.sh web01 
+<li><p>重启web01</p>
+<pre><code>./change_nginx1.sh web01 
 ./change_nginx2.sh web01
+</code></pre></li>
+<li><p>重启web03  172.16.16.23</p>
+<pre><code>./change_nginx1.sh web03
+./change_nginx2.sh web03
 </code></pre></li>
 <li>成功后执行以下命令恢复负载均衡<pre><code>./change_nginx1_recover.sh recover 
 ./change_nginx2_recover.sh recover
@@ -317,11 +328,7 @@ TempCommonManager   sql执行
 		<ul class="clearfix">
 		
 			
-				<li><a href="/tags/J2EE/" title="J2EE">J2EE<sup>1</sup></a></li>
-			
-		
-			
-				<li><a href="/tags/java/" title="java">java<sup>1</sup></a></li>
+				<li><a href="/tags/command/" title="command">command<sup>1</sup></a></li>
 			
 		
 			
@@ -329,11 +336,15 @@ TempCommonManager   sql执行
 			
 		
 			
-				<li><a href="/tags/command/" title="command">command<sup>1</sup></a></li>
+				<li><a href="/tags/jQuery/" title="jQuery">jQuery<sup>1</sup></a></li>
 			
 		
 			
-				<li><a href="/tags/jQuery/" title="jQuery">jQuery<sup>1</sup></a></li>
+				<li><a href="/tags/J2EE/" title="J2EE">J2EE<sup>1</sup></a></li>
+			
+		
+			
+				<li><a href="/tags/java/" title="java">java<sup>1</sup></a></li>
 			
 		
 		</ul>

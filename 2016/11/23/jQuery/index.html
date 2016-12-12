@@ -21,7 +21,7 @@
 <meta property="og:description" content="jQuery简介$(…)、jQuery(…)
  $(”#foo”) 和 jQuery(”#foo”) 等价；
  初步使用  12345678910111213141516//引入jquery库&amp;lt;script type=”text/javascript” src=”../js/jquery-2.1.1.min.js”&amp;gt;&amp;lt;/script&amp;gt;//等待dom元素加载完毕，弹出一个">
-<meta property="og:updated_time" content="2016-11-23T11:31:47.162Z">
+<meta property="og:updated_time" content="2016-12-12T09:11:21.480Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="jQuery">
 <meta name="twitter:description" content="jQuery简介$(…)、jQuery(…)
@@ -100,7 +100,7 @@
 		<div id="toc" class="toc-article">
 			<strong class="toc-title">文章目录</strong>
 		
-			<ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#jQuery简介"><span class="toc-number">1.</span> <span class="toc-text">jQuery简介</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#…-、jQuery-…"><span class="toc-number">1.1.</span> <span class="toc-text">$(…)、jQuery(…)</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#jQuery代码风格"><span class="toc-number">1.2.</span> <span class="toc-text">jQuery代码风格</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#jQuery对象和DOM对象"><span class="toc-number">1.3.</span> <span class="toc-text">jQuery对象和DOM对象</span></a></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#jQuery选择器"><span class="toc-number">2.</span> <span class="toc-text">jQuery选择器</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#基本选择器"><span class="toc-number">2.1.</span> <span class="toc-text">基本选择器</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#层次选择器"><span class="toc-number">2.2.</span> <span class="toc-text">层次选择器</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#过滤选择器"><span class="toc-number">2.3.</span> <span class="toc-text">过滤选择器</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#表单选择器"><span class="toc-number">2.4.</span> <span class="toc-text">表单选择器</span></a></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#jQuery中的DOM操作"><span class="toc-number">3.</span> <span class="toc-text">jQuery中的DOM操作</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#DOM-Core"><span class="toc-number">3.1.</span> <span class="toc-text">DOM Core</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#HTML-DOM"><span class="toc-number">3.2.</span> <span class="toc-text">HTML_DOM</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#CSS-DOM"><span class="toc-number">3.3.</span> <span class="toc-text">CSS_DOM</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#jQuery-DOM操作"><span class="toc-number">3.4.</span> <span class="toc-text">jQuery-DOM操作</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#查找节点"><span class="toc-number">3.4.1.</span> <span class="toc-text">查找节点</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#创建节点"><span class="toc-number">3.4.2.</span> <span class="toc-text">创建节点</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#插入节点"><span class="toc-number">3.4.3.</span> <span class="toc-text">插入节点</span></a></li></ol></li></ol></li></ol>
+			<ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#jQuery简介"><span class="toc-number">1.</span> <span class="toc-text">jQuery简介</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#…-、jQuery-…"><span class="toc-number">1.1.</span> <span class="toc-text">$(…)、jQuery(…)</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#jQuery代码风格"><span class="toc-number">1.2.</span> <span class="toc-text">jQuery代码风格</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#jQuery对象和DOM对象"><span class="toc-number">1.3.</span> <span class="toc-text">jQuery对象和DOM对象</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#jQuery高效代码编写"><span class="toc-number">1.4.</span> <span class="toc-text">jQuery高效代码编写</span></a></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#jQuery选择器"><span class="toc-number">2.</span> <span class="toc-text">jQuery选择器</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#基本选择器"><span class="toc-number">2.1.</span> <span class="toc-text">基本选择器</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#层次选择器"><span class="toc-number">2.2.</span> <span class="toc-text">层次选择器</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#过滤选择器"><span class="toc-number">2.3.</span> <span class="toc-text">过滤选择器</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#表单选择器"><span class="toc-number">2.4.</span> <span class="toc-text">表单选择器</span></a></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#jQuery中的DOM操作"><span class="toc-number">3.</span> <span class="toc-text">jQuery中的DOM操作</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#DOM-Core"><span class="toc-number">3.1.</span> <span class="toc-text">DOM Core</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#HTML-DOM"><span class="toc-number">3.2.</span> <span class="toc-text">HTML_DOM</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#CSS-DOM"><span class="toc-number">3.3.</span> <span class="toc-text">CSS_DOM</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#jQuery-DOM操作"><span class="toc-number">3.4.</span> <span class="toc-text">jQuery-DOM操作</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#查找节点"><span class="toc-number">3.4.1.</span> <span class="toc-text">查找节点</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#创建节点"><span class="toc-number">3.4.2.</span> <span class="toc-text">创建节点</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#插入节点"><span class="toc-number">3.4.3.</span> <span class="toc-text">插入节点</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#删除节点"><span class="toc-number">3.4.4.</span> <span class="toc-text">删除节点</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#复制节点"><span class="toc-number">3.4.5.</span> <span class="toc-text">复制节点</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#替换节点"><span class="toc-number">3.4.6.</span> <span class="toc-text">替换节点</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#包裹节点"><span class="toc-number">3.4.7.</span> <span class="toc-text">包裹节点</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#属性操作"><span class="toc-number">3.4.8.</span> <span class="toc-text">属性操作</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#样式操作"><span class="toc-number">3.4.9.</span> <span class="toc-text">样式操作</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#获取和设置HTML、文本和值"><span class="toc-number">3.4.10.</span> <span class="toc-text">获取和设置HTML、文本和值</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#遍历节点"><span class="toc-number">3.4.11.</span> <span class="toc-text">遍历节点</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#CSS-DOM操作"><span class="toc-number">3.4.12.</span> <span class="toc-text">CSS_DOM操作</span></a></li></ol></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#jQuery事件"><span class="toc-number">4.</span> <span class="toc-text">jQuery事件</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#事件绑定on-bind"><span class="toc-number">4.1.</span> <span class="toc-text">事件绑定on/bind</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#合成事件-多个事件循环"><span class="toc-number">4.2.</span> <span class="toc-text">合成事件(多个事件循环)</span></a></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#Ajax应用"><span class="toc-number">5.</span> <span class="toc-text">Ajax应用</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#js中Ajax的使用"><span class="toc-number">5.1.</span> <span class="toc-text">js中Ajax的使用</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#jQuery中的Ajax"><span class="toc-number">5.2.</span> <span class="toc-text">jQuery中的Ajax</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#load-方法"><span class="toc-number">5.2.1.</span> <span class="toc-text">load()方法</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#get-方法和-post-方法"><span class="toc-number">5.2.2.</span> <span class="toc-text">$.get()方法和$.post()方法</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#getScript-、-each-、-getJSON-方法"><span class="toc-number">5.2.3.</span> <span class="toc-text">$.getScript()、$.each()、$.getJSON()方法</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#ajax-方法"><span class="toc-number">5.2.4.</span> <span class="toc-text">$.ajax()方法</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#序列化元素"><span class="toc-number">5.3.</span> <span class="toc-text">序列化元素</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#serialize-方法"><span class="toc-number">5.3.1.</span> <span class="toc-text">serialize()方法</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#serializeArray-方法"><span class="toc-number">5.3.2.</span> <span class="toc-text">serializeArray()方法</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#param-方法"><span class="toc-number">5.3.3.</span> <span class="toc-text">$.param()方法</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#jQuery中的Ajax全局事件"><span class="toc-number">5.4.</span> <span class="toc-text">jQuery中的Ajax全局事件</span></a></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#插件的使用和写法"><span class="toc-number">6.</span> <span class="toc-text">插件的使用和写法</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#表单验证插件-Validation"><span class="toc-number">6.1.</span> <span class="toc-text">表单验证插件-Validation</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#表单插件-Form"><span class="toc-number">6.2.</span> <span class="toc-text">表单插件-Form</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#jQuery-UI插件"><span class="toc-number">6.3.</span> <span class="toc-text">jQuery UI插件</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Cookie插件"><span class="toc-number">6.4.</span> <span class="toc-text">Cookie插件</span></a></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#js、jQuery常用操作"><span class="toc-number">7.</span> <span class="toc-text">js、jQuery常用操作</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#复选框、下拉框是否被选中"><span class="toc-number">7.1.</span> <span class="toc-text">复选框、下拉框是否被选中</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#JS对象属性遍历"><span class="toc-number">7.2.</span> <span class="toc-text">JS对象属性遍历</span></a></li></ol></li></ol>
 		
 		</div>
 		
@@ -153,6 +153,87 @@
 <p>  对于一个DOM对象，只需用$()把DOM对象包装起来，就可以获得一个jQuery对象，方式为$(DOM对象)。<br>  jQuery代码如下：</p>
   <figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line">// DOM对象</div><div class="line">var cr = document.getElementById(”cr”);</div><div class="line"></div><div class="line">// jQuery对象</div><div class="line">var $cr = $(cr);</div></pre></td></tr></table></figure>
 <p>  <strong>注意：</strong><br>  <em>平时用到的jQuery对象都是通过$()函数制造出来的，$()函数就是一个jQuery对象的制造工厂。</em></p>
+</li>
+</ul>
+<h2 id="jQuery高效代码编写"><a href="#jQuery高效代码编写" class="headerlink" title="jQuery高效代码编写"></a>jQuery高效代码编写</h2><ul>
+<li><p> 缓存变量</p>
+<p>  DOM遍历是昂贵的，所以尽量将会重用的元素缓存。</p>
+  <figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div></pre></td><td class="code"><pre><div class="line">// 糟糕</div><div class="line"></div><div class="line">h = $(&apos;#element&apos;).height();</div><div class="line">$(&apos;#element&apos;).css(&apos;height&apos;,h-20);</div><div class="line"></div><div class="line">// 建议</div><div class="line"></div><div class="line">$element = $(&apos;#element&apos;);</div><div class="line">h = $element.height();</div><div class="line">$element.css(&apos;height&apos;,h-20);</div></pre></td></tr></table></figure>
+</li>
+<li><p> 避免全局变量</p>
+<p>  jQuery与javascript一样，一般来说,最好确保你的变量在函数作用域内。</p>
+  <figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div></pre></td><td class="code"><pre><div class="line">// 糟糕</div><div class="line"></div><div class="line">$element = $(&apos;#element&apos;);</div><div class="line">h = $element.height();</div><div class="line">$element.css(&apos;height&apos;,h-20);</div><div class="line"></div><div class="line">// 建议</div><div class="line"></div><div class="line">var $element = $(&apos;#element&apos;);</div><div class="line">var h = $element.height();</div><div class="line">$element.css(&apos;height&apos;,h-20);</div></pre></td></tr></table></figure>
+</li>
+<li><p> 使用匈牙利命名法</p>
+<p>  在变量前加$前缀，便于识别出jQuery对象。</p>
+  <figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div></pre></td><td class="code"><pre><div class="line">// 糟糕</div><div class="line"></div><div class="line">var first = $(&apos;#first&apos;);</div><div class="line">var second = $(&apos;#second&apos;);</div><div class="line">var value = $first.val();</div><div class="line"></div><div class="line">// 建议 - 在jQuery对象前加$前缀</div><div class="line"></div><div class="line">var $first = $(&apos;#first&apos;);</div><div class="line">var $second = $(&apos;#second&apos;),</div><div class="line">var value = $first.val();</div></pre></td></tr></table></figure>
+</li>
+<li><p> 使用 Var 链（单 Var 模式）</p>
+<p>  将多条var语句合并为一条语句，我建议将未赋值的变量放到后面。</p>
+  <figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div></pre></td><td class="code"><pre><div class="line">var</div><div class="line">  $first = $(&apos;#first&apos;),</div><div class="line">  $second = $(&apos;#second&apos;),</div><div class="line">  value = $first.val(),</div><div class="line">  k = 3,</div><div class="line">  cookiestring = &apos;SOMECOOKIESPLEASE&apos;,</div><div class="line">  i,</div><div class="line">  j,</div><div class="line">  myArray = &#123;&#125;;</div></pre></td></tr></table></figure>
+</li>
+<li><p> 请使用 ‘on’</p>
+<p>  在新版jQuery中，更短的 on(“click”) 用来取代类似 click() 这样的函数。在之前的版本中 on() 就是 bind()。自从jQuery 1.7版本后，on() 附加事件处理程序的首选方法。然而，出于一致性考虑，你可以简单的全部使用 on()方法。</p>
+  <figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div></pre></td><td class="code"><pre><div class="line">// 糟糕</div><div class="line"></div><div class="line">$first.click(function()&#123;</div><div class="line">    $first.css(&apos;border&apos;,&apos;1px solid red&apos;);</div><div class="line">    $first.css(&apos;color&apos;,&apos;blue&apos;);</div><div class="line">&#125;);</div><div class="line"></div><div class="line">$first.hover(function()&#123;</div><div class="line">    $first.css(&apos;border&apos;,&apos;1px solid red&apos;);</div><div class="line">&#125;)</div><div class="line"></div><div class="line">// 建议</div><div class="line">$first.on(&apos;click&apos;,function()&#123;</div><div class="line">    $first.css(&apos;border&apos;,&apos;1px solid red&apos;);</div><div class="line">    $first.css(&apos;color&apos;,&apos;blue&apos;);</div><div class="line">&#125;)</div><div class="line"></div><div class="line">$first.on(&apos;hover&apos;,function()&#123;</div><div class="line">    $first.css(&apos;border&apos;,&apos;1px solid red&apos;);</div><div class="line">&#125;)</div></pre></td></tr></table></figure>
+</li>
+<li><p> 精简javascript</p>
+<p>  一般来说,最好尽可能合并函数。</p>
+  <figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div></pre></td><td class="code"><pre><div class="line">// 糟糕</div><div class="line"></div><div class="line">$first.click(function()&#123;</div><div class="line">    $first.css(&apos;border&apos;,&apos;1px solid red&apos;);</div><div class="line">    $first.css(&apos;color&apos;,&apos;blue&apos;);</div><div class="line">&#125;);</div><div class="line"></div><div class="line">// 建议</div><div class="line"></div><div class="line">$first.on(&apos;click&apos;,function()&#123;</div><div class="line">    $first.css(&#123;</div><div class="line">        &apos;border&apos;:&apos;1px solid red&apos;,</div><div class="line">        &apos;color&apos;:&apos;blue&apos;</div><div class="line">    &#125;);</div><div class="line">&#125;);</div></pre></td></tr></table></figure>
+</li>
+<li><p> 链式操作</p>
+<p>  jQuery实现方法的链式操作是非常容易的。下面利用这一点。</p>
+  <figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div></pre></td><td class="code"><pre><div class="line">// 糟糕</div><div class="line"></div><div class="line">$second.html(value);</div><div class="line">$second.on(&apos;click&apos;,function()&#123;</div><div class="line">    alert(&apos;hello everybody&apos;);</div><div class="line">&#125;);</div><div class="line">$second.fadeIn(&apos;slow&apos;);</div><div class="line">$second.animate(&#123;height:&apos;120px&apos;&#125;,500);</div><div class="line"></div><div class="line">// 建议</div><div class="line"></div><div class="line">$second.html(value);</div><div class="line">$second.on(&apos;click&apos;,function()&#123;</div><div class="line">    alert(&apos;hello everybody&apos;);</div><div class="line">&#125;).fadeIn(&apos;slow&apos;).animate(&#123;height:&apos;120px&apos;&#125;,500);</div></pre></td></tr></table></figure>
+</li>
+<li><p> 维持代码的可读性</p>
+<p>  伴随着精简代码和使用链式的同时，可能带来代码的难以阅读。添加缩紧和换行能起到很好的效果。</p>
+  <figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div></pre></td><td class="code"><pre><div class="line">// 糟糕</div><div class="line"></div><div class="line">$second.html(value);</div><div class="line">$second.on(&apos;click&apos;,function()&#123;</div><div class="line">    alert(&apos;hello everybody&apos;);</div><div class="line">&#125;).fadeIn(&apos;slow&apos;).animate(&#123;height:&apos;120px&apos;&#125;,500);</div><div class="line"></div><div class="line">// 建议</div><div class="line"></div><div class="line">$second.html(value);</div><div class="line">$second</div><div class="line">    .on(&apos;click&apos;,function()&#123; alert(&apos;hello everybody&apos;);&#125;)</div><div class="line">    .fadeIn(&apos;slow&apos;)</div><div class="line">    .animate(&#123;height:&apos;120px&apos;&#125;,500);</div></pre></td></tr></table></figure>
+</li>
+<li><p> 选择短路求值</p>
+<p>  短路求值是一个从左到右求值的表达式，用 &amp;&amp;（逻辑与）或 ||（逻辑或）操作符。</p>
+  <figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div></pre></td><td class="code"><pre><div class="line">// 糟糕</div><div class="line"></div><div class="line">function initVar($myVar) &#123;</div><div class="line">    if(!$myVar) &#123;</div><div class="line">        $myVar = $(&apos;#selector&apos;);</div><div class="line">    &#125;</div><div class="line">&#125;</div><div class="line"></div><div class="line">// 建议</div><div class="line"></div><div class="line">function initVar($myVar) &#123;</div><div class="line">    $myVar = $myVar || $(&apos;#selector&apos;);</div><div class="line">&#125;</div></pre></td></tr></table></figure>
+</li>
+<li><p> 选择捷径</p>
+<p>  精简代码的其中一种方式是利用编码捷径。</p>
+  <figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div></pre></td><td class="code"><pre><div class="line">// 糟糕</div><div class="line"></div><div class="line">if(collection.length &gt; 0)&#123;..&#125;</div><div class="line"></div><div class="line">// 建议</div><div class="line"></div><div class="line">if(collection.length)&#123;..&#125;</div></pre></td></tr></table></figure>
+</li>
+<li><p> 繁重的操作中分离元素</p>
+<p>  如果你打算对DOM元素做大量操作（连续设置多个属性或css样式），建议首先分离元素然后在添加。</p>
+  <figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div></pre></td><td class="code"><pre><div class="line">// 糟糕</div><div class="line"></div><div class="line">var</div><div class="line">    $container = $(&quot;#container&quot;),</div><div class="line">    $containerLi = $(&quot;#container li&quot;),</div><div class="line">    $element = null;</div><div class="line"></div><div class="line">$element = $containerLi.first();</div><div class="line">//... 许多复杂的操作</div><div class="line"></div><div class="line">// better</div><div class="line"></div><div class="line">var</div><div class="line">    $container = $(&quot;#container&quot;),</div><div class="line">    $containerLi = $container.find(&quot;li&quot;),</div><div class="line">    $element = null;</div><div class="line"></div><div class="line">$element = $containerLi.first().detach();</div><div class="line">//... 许多复杂的操作</div><div class="line"></div><div class="line">$container.append($element);</div></pre></td></tr></table></figure>
+</li>
+<li><p> 熟记技巧</p>
+<p>  你可能对使用jQuery中的方法缺少经验,一定要查看的文档，可能会有一个更好或更快的方法来使用它。</p>
+  <figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div></pre></td><td class="code"><pre><div class="line">// 糟糕</div><div class="line"></div><div class="line">$(&apos;#id&apos;).data(key,value);</div><div class="line"></div><div class="line">// 建议 (高效)</div><div class="line"></div><div class="line">$.data(&apos;#id&apos;,key,value);</div></pre></td></tr></table></figure>
+</li>
+<li><p> 使用子查询缓存的父元素</p>
+<p>  正如前面所提到的，DOM遍历是一项昂贵的操作。典型做法是缓存父元素并在选择子元素时重用这些缓存元素。</p>
+  <figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div></pre></td><td class="code"><pre><div class="line">// 糟糕</div><div class="line"></div><div class="line">var</div><div class="line">    $container = $(&apos;#container&apos;),</div><div class="line">    $containerLi = $(&apos;#container li&apos;),</div><div class="line">    $containerLiSpan = $(&apos;#container li span&apos;);</div><div class="line"></div><div class="line">// 建议 (高效)</div><div class="line"></div><div class="line">var</div><div class="line">    $container = $(&apos;#container &apos;),</div><div class="line">    $containerLi = $container.find(&apos;li&apos;),</div><div class="line">    $containerLiSpan= $containerLi.find(&apos;span&apos;);</div></pre></td></tr></table></figure>
+</li>
+<li><p> 避免通用选择符</p>
+<p>  将通用选择符放到后代选择符中，性能非常糟糕。</p>
+  <figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div></pre></td><td class="code"><pre><div class="line">// 糟糕</div><div class="line"></div><div class="line">$(&apos;.container &gt; *&apos;);</div><div class="line"></div><div class="line">// 建议</div><div class="line"></div><div class="line">$(&apos;.container&apos;).children();</div></pre></td></tr></table></figure>
+</li>
+<li><p> 避免隐式通用选择符</p>
+<p>  通用选择符有时是隐式的，不容易发现。</p>
+  <figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div></pre></td><td class="code"><pre><div class="line">// 糟糕</div><div class="line"></div><div class="line">$(&apos;.someclass :radio&apos;);</div><div class="line"></div><div class="line">// 建议</div><div class="line"></div><div class="line">$(&apos;.someclass input:radio&apos;);</div></pre></td></tr></table></figure>
+</li>
+<li><p> 优化选择符</p>
+<p>  例如，Id选择符应该是唯一的，所以没有必要添加额外的选择符。</p>
+  <figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div></pre></td><td class="code"><pre><div class="line">// 糟糕</div><div class="line"></div><div class="line">$(&apos;div#myid&apos;);</div><div class="line">$(&apos;div#footer a.myLink&apos;);</div><div class="line"></div><div class="line">// 建议</div><div class="line">$(&apos;#myid&apos;);</div><div class="line">$(&apos;#footer .myLink&apos;);</div></pre></td></tr></table></figure>
+</li>
+<li><p> 避免多个ID选择符</p>
+<p>  在此强调，ID 选择符应该是唯一的，不需要添加额外的选择符，更不需要多个后代ID选择符。</p>
+  <figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div></pre></td><td class="code"><pre><div class="line">// 糟糕</div><div class="line"></div><div class="line">$(&apos;#outer #inner&apos;);</div><div class="line"></div><div class="line">// 建议</div><div class="line"></div><div class="line">$(&apos;#inner&apos;);</div></pre></td></tr></table></figure>
+</li>
+<li><p> 坚持最新版本</p>
+<p>  新版本通常更好：更轻量级，更高效。显然，你需要考虑你要支持的代码的兼容性。例如，2.0版本不支持ie 6/7/8。</p>
+</li>
+<li><p> 摒弃弃用方法</p>
+<p>  关注每个新版本的废弃方法是非常重要的并尽量避免使用这些方法。</p>
+  <figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div></pre></td><td class="code"><pre><div class="line">// 糟糕 - live 已经废弃</div><div class="line"></div><div class="line">$(&apos;#stuff&apos;).live(&apos;click&apos;, function() &#123;</div><div class="line">  console.log(&apos;hooray&apos;);</div><div class="line">&#125;);</div><div class="line"></div><div class="line">// 建议</div><div class="line">$(&apos;#stuff&apos;).on(&apos;click&apos;, function() &#123;</div><div class="line">  console.log(&apos;hooray&apos;);</div><div class="line">&#125;);</div><div class="line">// 注：此处可能不当，应为live能实现实时绑定，delegate或许更合适</div></pre></td></tr></table></figure>
+</li>
+<li><p> 利用CDN</p>
+<p>  谷歌的CND能保证选择离用户最近的缓存并迅速响应。（使用谷歌CND请自行搜索地址，此处地址以不能使用，推荐jquery官网提供的CDN）。</p>
+  <figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div></pre></td><td class="code"><pre><div class="line">// 糟糕</div><div class="line"></div><div class="line">$(&apos;#outer #inner&apos;);</div><div class="line"></div><div class="line">// 建议</div><div class="line"></div><div class="line">$(&apos;#inner&apos;);</div></pre></td></tr></table></figure>
 </li>
 </ul>
 <h1 id="jQuery选择器"><a href="#jQuery选择器" class="headerlink" title="jQuery选择器"></a>jQuery选择器</h1><pre><code>例：
@@ -212,7 +293,398 @@ element.style.color = ”red”;
 </ul>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line">var $li_1 = $(”&lt;li title=’西瓜’&gt;西瓜&lt;/li&gt;”);</div><div class="line">var $li_2 = $(”&lt;li title=’桔子’&gt;桔子&lt;/li&gt;”);</div><div class="line">$(”ul”).append($li_1);</div><div class="line">$(”ul”).append($li_2);</div></pre></td></tr></table></figure>
 <h3 id="插入节点"><a href="#插入节点" class="headerlink" title="插入节点"></a>插入节点</h3><p><div class="div_table"></div></p>
-<table><br>    <thead><br>        <tr><br>            <th>code</th><br>            <th>type</th><br>            <th>demo</th><br>        </tr><br>    </thead><br>    <tbody><br>        <tr><td>append()      </td><td>向每个匹配的元素内部追加内容</td><td>  &lt;p&gt;hello!&lt;/p&gt;$(”p”).append(”&lt;b&gt;world&lt;/b&gt;”);<br>        &lt;p&gt;hello!&lt;b&gt;world&lt;/b&gt;&lt;/p&gt;</td></tr><br>        <tr><td>appendTo()    </td><td>颠倒append()方法  </td><td>  &lt;p&gt;hello!&lt;/p&gt;$(”p”).appendTo(”&lt;b&gt;world&lt;/b&gt;”)<br>        ;&lt;p&gt;&lt;b&gt;world&lt;/b&gt;hello!&lt;/p&gt;</td></tr><br>        <tr><td>prepend()     </td><td>向每个匹配的元素内部前置内容</td><td>  &lt;p&gt;hello!&lt;/p&gt;$(”p”).prepend(”&lt;b&gt;world&lt;/b&gt;”)<br>        ;&lt;p&gt;&lt;b&gt;world&lt;/b&gt;hello!&lt;/p&gt;</td></tr><br>        <tr><td>prependTo()   </td><td>颠倒prepend()方法 </td><td>  &lt;p&gt;hello!&lt;/p&gt;$(”&lt;b&gt;world&lt;/b&gt;”).appendTo(”p”);<br>        &lt;p&gt;&lt;b&gt;world&lt;/b&gt;hello!&lt;/p&gt;</td></tr><br>        <tr><td>after()       </td><td>在每个匹配的元素之后插入内容</td><td>  &lt;p&gt;hello!&lt;/p&gt;$(”p”).after(”&lt;b&gt;world&lt;/b&gt;”);<br>        &lt;p&gt;hello!&lt;/p&gt;&lt;b&gt;world&lt;/b&gt;</td></tr><br>        <tr><td>insertAfter() </td><td>  颠倒after()方法 </td><td>&lt;p&gt;hello!&lt;/p&gt;$(”p”).insertAfter(”&lt;b&gt;world&lt;/b&gt;”);<br>        &lt;b&gt;world&lt;/b&gt;&lt;p&gt;hello!&lt;/p&gt;</td></tr><br>        <tr><td>before()</td><td> 用法与after()相反 </td><td></td></tr><br>        <tr><td>insertBefore()</td><td></td><td></td></tr><br>    </tbody><br></table>  
+<table><br>    <thead><br>        <tr><br>            <th>code</th><br>            <th>type</th><br>            <th>demo</th><br>        </tr><br>    </thead><br>    <tbody><br>        <tr><td>append()      </td><td>向每个匹配的元素内部追加内容</td><td>  &lt;p&gt;hello!&lt;/p&gt;$(”p”).append(”&lt;b&gt;world&lt;/b&gt;”);<br>        &lt;p&gt;hello!&lt;b&gt;world&lt;/b&gt;&lt;/p&gt;</td></tr><br>        <tr><td>appendTo()    </td><td>颠倒append()方法  </td><td>  &lt;p&gt;hello!&lt;/p&gt;$(”p”).appendTo(”&lt;b&gt;world&lt;/b&gt;”)<br>        ;&lt;p&gt;&lt;b&gt;world&lt;/b&gt;hello!&lt;/p&gt;</td></tr><br>        <tr><td>prepend()     </td><td>向每个匹配的元素内部前置内容</td><td>  &lt;p&gt;hello!&lt;/p&gt;$(”p”).prepend(”&lt;b&gt;world&lt;/b&gt;”)<br>        ;&lt;p&gt;&lt;b&gt;world&lt;/b&gt;hello!&lt;/p&gt;</td></tr><br>        <tr><td>prependTo()   </td><td>颠倒prepend()方法 </td><td>  &lt;p&gt;hello!&lt;/p&gt;$(”&lt;b&gt;world&lt;/b&gt;”).appendTo(”p”);<br>        &lt;p&gt;&lt;b&gt;world&lt;/b&gt;hello!&lt;/p&gt;</td></tr><br>        <tr><td>after()       </td><td>在每个匹配的元素之后插入内容</td><td>  &lt;p&gt;hello!&lt;/p&gt;$(”p”).after(”&lt;b&gt;world&lt;/b&gt;”);<br>        &lt;p&gt;hello!&lt;/p&gt;&lt;b&gt;world&lt;/b&gt;</td></tr><br>        <tr><td>insertAfter() </td><td>  颠倒after()方法 </td><td>&lt;p&gt;hello!&lt;/p&gt;$(”p”).insertAfter(”&lt;b&gt;world&lt;/b&gt;”);<br>        &lt;b&gt;world&lt;/b&gt;&lt;p&gt;hello!&lt;/p&gt;</td></tr><br>        <tr><td>before()</td><td> 用法与after()相反 </td><td></td></tr><br>        <tr><td>insertBefore()</td><td></td><td></td></tr><br>    </tbody><br></table>
+
+<h3 id="删除节点"><a href="#删除节点" class="headerlink" title="删除节点"></a>删除节点</h3><ul>
+<li><p> remove()方法</p>
+  <figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$(”ul li:eq(1)”).remove();//获取第2个li节点后，移除(包括后代子节点)</div></pre></td></tr></table></figure>
+</li>
+<li><p> empty()方法</p>
+<p>  此方法并不是删除节点，而是清空节点</p>
+  <figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$(”ul li:eq(1)”).empty();//清空此元素里的内容</div></pre></td></tr></table></figure>
+</li>
+</ul>
+<h3 id="复制节点"><a href="#复制节点" class="headerlink" title="复制节点"></a>复制节点</h3><pre><code>页面中的拖动功能就是用的复制节点。
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">$(”ul li”).click(function() &#123;</div><div class="line">    $(this).clone().appendTo(”ul”); //复制当前单击的节点，追加到ul元素</div><div class="line">&#125;)</div></pre></td></tr></table></figure>
+
+复制节点后，被复制的新元素并不具有任何行为。如果需要新元素也具有复制功能，使用：
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$(this).clone(true).appendTo(”body”);   //注意参数true</div></pre></td></tr></table></figure>
+</code></pre><h3 id="替换节点"><a href="#替换节点" class="headerlink" title="替换节点"></a>替换节点</h3><ul>
+<li><p> replaceWith()</p>
+<p>  将所有匹配的元素都替换成指定的HTML 或者 DOM 元素</p>
+  <figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$(”p”).replaceWith(”&lt;strong&gt;西瓜&lt;/strong&gt;”);</div></pre></td></tr></table></figure>
+</li>
+<li><p> replaceAll()</p>
+<p>  与replaceWith()颠倒。</p>
+</li>
+</ul>
+<h3 id="包裹节点"><a href="#包裹节点" class="headerlink" title="包裹节点"></a>包裹节点</h3><ul>
+<li><p> wrap()</p>
+  <figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div></pre></td><td class="code"><pre><div class="line">&lt;strong&gt;西瓜&lt;/strong&gt;</div><div class="line">&lt;strong&gt;桔子&lt;/strong&gt;</div><div class="line">$(”strong”).wrap(”&lt;b&gt;&lt;/b&gt;”);</div><div class="line">// 结果为：</div><div class="line">&lt;b&gt;&lt;strong&gt;西瓜&lt;/strong&gt;&lt;/b&gt;</div><div class="line">&lt;b&gt;&lt;strong&gt;桔子&lt;/strong&gt;&lt;/b&gt;</div></pre></td></tr></table></figure>
+</li>
+<li><p> wrapAll()</p>
+  <figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div></pre></td><td class="code"><pre><div class="line">&lt;strong&gt;西瓜&lt;/strong&gt;</div><div class="line">&lt;strong&gt;桔子&lt;/strong&gt;</div><div class="line">$(”strong”).wrapAll(”&lt;b&gt;&lt;/b&gt;”);</div><div class="line">// 结果为：</div><div class="line">&lt;b&gt;</div><div class="line">&lt;strong&gt;西瓜&lt;/strong&gt;</div><div class="line">&lt;strong&gt;桔子&lt;/strong&gt;</div><div class="line">&lt;/b&gt;</div></pre></td></tr></table></figure>
+</li>
+<li><p> wrapInner()</p>
+  <figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line">&lt;strong&gt;西瓜&lt;/strong&gt;</div><div class="line">$(”strong”).wrapInner(”&lt;b&gt;&lt;/b&gt;”);</div><div class="line">// 结果：</div><div class="line">&lt;strong&gt;&lt;b&gt;西瓜&lt;/b&gt;&lt;/strong&gt;</div></pre></td></tr></table></figure>
+</li>
+</ul>
+<h3 id="属性操作"><a href="#属性操作" class="headerlink" title="属性操作"></a>属性操作</h3><ul>
+<li><p> 获取属性和设置属性</p>
+<p>  jQuery中，用<strong>attr()</strong>方法来获取和设置元素属性，<strong>removeAttr()</strong>来删除元素属性。</p>
+  <figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line">var $para = $(”p”);</div><div class="line">var p_txt = $para.attr(”title”);    //获取P元素节点的属性title</div><div class="line">$(”p”).attr(”title”, ”your title”); //设置单个的属性值</div><div class="line">//设置多个属性的值</div><div class="line">$(”p”).attr(&#123;”title”:”your title”, ”name”:”test”&#125;);</div></pre></td></tr></table></figure>
+</li>
+<li><p> 删除属性</p>
+  <figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$(”p”).removeAttr(”title”); //删除P元素的属性title</div></pre></td></tr></table></figure>
+</li>
+</ul>
+<h3 id="样式操作"><a href="#样式操作" class="headerlink" title="样式操作"></a>样式操作</h3><ul>
+<li><p> 获取样式和设置样式</p>
+  <figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">var p_class = $(”p”).attr(”class”); //获取p的class</div><div class="line">$(”p”).attr(”class”, ”high”);   //设置P的class为high</div></pre></td></tr></table></figure>
+</li>
+<li><p> 追加样式</p>
+  <figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$(”p”).addClass(”another”); //给P追加another类</div></pre></td></tr></table></figure>
+</li>
+<li><p> 移除样式</p>
+  <figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">$(”p”).removeClass(”another”);  //移除P中值为another的class</div><div class="line">$(”p”).removeClass(”another high”); //移除P中两个class</div><div class="line">$(”p”).removeClass();   //移除所有样式class</div></pre></td></tr></table></figure>
+</li>
+<li><p> 切换样式</p>
+<p>  toggle()方法：<br>  当指定元素被点击时，在两个或多个函数之间轮流切换。<br>  例：来切换不同的背景颜色</p>
+  <figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div></pre></td><td class="code"><pre><div class="line">$(document).ready(function () &#123;</div><div class="line">    $(&quot;button&quot;).toggle(function () &#123;</div><div class="line">            $(&quot;body&quot;).css(&quot;background-color&quot;, &quot;green&quot;);</div><div class="line">        &#125;,</div><div class="line">        function () &#123;</div><div class="line">            $(&quot;body&quot;).css(&quot;background-color&quot;, &quot;red&quot;);</div><div class="line">        &#125;,</div><div class="line">        function () &#123;</div><div class="line">            $(&quot;body&quot;).css(&quot;background-color&quot;, &quot;yellow&quot;);</div><div class="line">        &#125;</div><div class="line">    );</div><div class="line">&#125;);</div></pre></td></tr></table></figure>
+<p>  toggleClass()方法：<br>  控制样式上的重复切换。如果类名存在则删除，不存在则添加它。</p>
+  <figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div></pre></td><td class="code"><pre><div class="line">&lt;p class=”myClass”&gt;西瓜&lt;/p&gt;</div><div class="line">$(”p”).toggleClass(”myClass”);</div><div class="line">//触发事件后, 格式变为</div><div class="line">&lt;p&gt;西瓜&lt;/p&gt;</div><div class="line">//再次触发事件后, 格式变为</div><div class="line">&lt;p class=”myClass”&gt;西瓜&lt;/p&gt;</div></pre></td></tr></table></figure>
+</li>
+<li><p> 判断是否含有某个样式</p>
+<p>  hasClass()可以判断元素是否含有某个class,有返回true,否则返回false</p>
+  <figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">$(”p”).hasClass(”myClass”); //判断p是否含有myClass类</div><div class="line">//等价于</div><div class="line">$(”p”).is(”.myClass”);  //is(”.”+class)</div></pre></td></tr></table></figure>
+</li>
+</ul>
+<h3 id="获取和设置HTML、文本和值"><a href="#获取和设置HTML、文本和值" class="headerlink" title="获取和设置HTML、文本和值"></a>获取和设置HTML、文本和值</h3><ul>
+<li><p> html()方法</p>
+<p>  此方法类似于js中的innerHTML属性，可以用来读取或设置某个元素中的HTML内容</p>
+  <figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line">&lt;p title=”西瓜”&gt;&lt;strong&gt;西瓜&lt;/strong&gt;&lt;/p&gt;</div><div class="line">//获取P的HTML代码: &lt;strong&gt;西瓜&lt;/strong&gt;</div><div class="line">var p_html = $(”p”).html();</div><div class="line">//设置P的HTML代码</div><div class="line">$(”p”).html(”&lt;strong&gt;桔子&lt;/strong&gt;”);</div></pre></td></tr></table></figure>
+</li>
+<li><p> text()方法</p>
+<p>  此方法类似于js中的innerText属性，可以用来读取或设置某个元素中的文本内容</p>
+  <figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line">&lt;p title=”西瓜”&gt;&lt;strong&gt;西瓜&lt;/strong&gt;&lt;/p&gt;</div><div class="line">//获取P的文本内容: 西瓜</div><div class="line">//设置P的文本内容</div><div class="line">$(”p”).text(”桔子”);</div></pre></td></tr></table></figure>
+</li>
+<li><p> val()方法</p>
+<p>  此方法类似于js中的value属性，可以用来读取或设置某个元素的值</p>
+  <figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div></pre></td><td class="code"><pre><div class="line">&lt;input type=”text” id=”name” value=”张三”&gt;</div><div class="line">$(”#name”).val();   //获取id为name的input值</div><div class="line">$(”#name”).val(”李四”);   //设置input的值</div><div class="line">// 通过val()方法改变下拉框选中项</div><div class="line">&lt;select id=&quot;single&quot; multiple=&quot;multiple&quot;&gt;</div><div class="line">    &lt;option value=&quot;a1&quot;&gt;t1&lt;/option&gt;</div><div class="line">    &lt;option value=&quot;a2&quot;&gt;t2&lt;/option&gt;</div><div class="line">    &lt;option value=&quot;a3&quot;&gt;t3&lt;/option&gt;</div><div class="line">    &lt;option value=&quot;a4&quot;&gt;t4&lt;/option&gt;</div><div class="line">&lt;/select&gt;</div><div class="line">$(”#single”).val(”a2”);</div><div class="line">或使用attr()方法：</div><div class="line">$(”#single option:eq(1)”).attr(”selected”, true);</div><div class="line">使第2、3项被选中</div><div class="line">$(”#single”).val([”a2”, ”a3”]);</div></pre></td></tr></table></figure>
+<p>  <strong>tip: 如果option中没有value属性,则value值与文本相同。</strong></p>
+</li>
+</ul>
+<h3 id="遍历节点"><a href="#遍历节点" class="headerlink" title="遍历节点"></a>遍历节点</h3><ul>
+<li><p> children()方法</p>
+<p>  用于获取匹配元素的子元素集合</p>
+  <figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div></pre></td><td class="code"><pre><div class="line">&lt;body&gt;</div><div class="line">    &lt;p&gt;&lt;/p&gt;</div><div class="line">    &lt;ul&gt;</div><div class="line">        &lt;li&gt;&lt;/li&gt;</div><div class="line">        &lt;li&gt;&lt;/li&gt;</div><div class="line">        &lt;li&gt;&lt;/li&gt;</div><div class="line">    &lt;/ul&gt;</div><div class="line">&lt;/body&gt;</div><div class="line">var $body_length = $(”body”).children;  //长度为2</div><div class="line">var $ul_length = $(”ul”).children;  //长度为3</div></pre></td></tr></table></figure>
+<p>  <strong>tip: children()方法只考虑子元素而不考虑任何后代元素。</strong></p>
+</li>
+<li><p> next()方法</p>
+<p>  用于取得匹配元素后面紧邻的同辈元素</p>
+  <figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">var $ul = $(”p”).next();    //取得P后的同辈元素ul</div></pre></td></tr></table></figure>
+</li>
+<li><p> prev()方法</p>
+<p>  用于取得匹配元素前面紧邻的同辈元素</p>
+  <figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">var $p = $(”ul”).prev();    //取得ul前的同辈元素p</div></pre></td></tr></table></figure>
+</li>
+<li><p> siblings()方法</p>
+<p>  用于取得匹配元素前后所有的同辈元素</p>
+</li>
+</ul>
+<h3 id="CSS-DOM操作"><a href="#CSS-DOM操作" class="headerlink" title="CSS_DOM操作"></a>CSS_DOM操作</h3><pre><code>使用css()方法获取和设置元素的样式属性
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line">$(”p”).css(”color”);    //获取P的样式颜色</div><div class="line">$(”p”).css(”color”,”red”);  //设置P的样式的红色</div><div class="line">// css()设置多个样式属性：</div><div class="line">$(”p”).css(&#123;”color”:”red”, ”font-size”: ”30px”&#125;);</div></pre></td></tr></table></figure>
+</code></pre><h1 id="jQuery事件"><a href="#jQuery事件" class="headerlink" title="jQuery事件"></a>jQuery事件</h1><h2 id="事件绑定on-bind"><a href="#事件绑定on-bind" class="headerlink" title="事件绑定on/bind"></a>事件绑定on/bind</h2><pre><code>bind(type, [data], fn);
+type为事件类型(不带on);
+[data]可选参数,作为event.data属性值传递给事件对象的额外数据对象;
+fn则是用来绑定的处理函数;
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div></pre></td><td class="code"><pre><div class="line">$(function() &#123;</div><div class="line">    $(”p”).on(”click” , function() &#123;</div><div class="line">        $(this).next(”div.content”).show();</div><div class="line">    &#125;)</div><div class="line">&#125;)</div><div class="line">//简写绑定事件</div><div class="line">$(function() &#123;</div><div class="line">    $(”p”).click(function() &#123;</div><div class="line">    $(this).next(”div.content”).show();</div><div class="line">    &#125;)</div><div class="line">&#125;);</div></pre></td></tr></table></figure>
+</code></pre><h2 id="合成事件-多个事件循环"><a href="#合成事件-多个事件循环" class="headerlink" title="合成事件(多个事件循环)"></a>合成事件(多个事件循环)</h2><ul>
+<li><p> hover()方法</p>
+<p>  hover(enter, leave);<br>  用于模拟光标悬停事件。<br>  当光标移动到元素上时触发enter事件;光标移出时触发leave事件</p>
+  <figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div></pre></td><td class="code"><pre><div class="line">$(function() &#123;</div><div class="line">    $(”p”).hover(function() &#123;</div><div class="line">        $(this).next(”div.content”).show();</div><div class="line">    &#125;, function() &#123;</div><div class="line">        $(this).next(”div.content”).hide();</div><div class="line">    &#125;);</div><div class="line">&#125;)</div></pre></td></tr></table></figure>
+</li>
+<li><p> toggle()方法</p>
+<p>  toggle(fn1, fn2, fn3, fn4);<br>  用于模拟鼠标连续单击事件。<br>  第一次点击触发fn1, 第二次点击触发fn2…重复轮番调用。</p>
+  <figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div></pre></td><td class="code"><pre><div class="line">$(function() &#123;</div><div class="line">    $(”p”).toggle(function() &#123;</div><div class="line">        $(this).next(”div.content”).show();</div><div class="line">    &#125;, function() &#123;</div><div class="line">        $(this).next(”div.content”).hide();</div><div class="line">    &#125;);</div><div class="line">&#125;)</div></pre></td></tr></table></figure>
+</li>
+<li><p> 事件冒泡问题(event)</p>
+<p>  假如两个元素，其中一个嵌套在另一个元素里面，并且都被绑定了click事件，同时body<br>  也绑定了click事件。<br>  如果点击最内层元素，则会从内到外依次触发三个click事件。<br>  若停止事件冒泡，只触发内层click事件，则需要为函数添加一个事件对象参数event：</p>
+  <figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line">$(”element”).bind(”click”, function(event) &#123;</div><div class="line">    //event: 事件对象</div><div class="line">    //...........</div><div class="line">    event.stopPropagation();    //停止事件冒泡</div><div class="line">&#125;);</div></pre></td></tr></table></figure>
+</li>
+<li><p> 事件对象的属性</p>
+<ul>
+<li><p>event.type()方法</p>
+<p>获取到事件的类型</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line">$(”a”).click(function(event) &#123;</div><div class="line">    alert(event.type);  //打印click</div><div class="line">    return false;   //阻止链接跳转</div><div class="line">&#125;);</div></pre></td></tr></table></figure>
+</li>
+<li><p>enent.preventDefault()方法</p>
+<p>阻止默认事件行为<br>例：阻止表单提交</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div></pre></td><td class="code"><pre><div class="line">$(”sub”).bind(”click”, function(event) &#123;</div><div class="line">    var userName = $(”#userName”).val();</div><div class="line">    if(userName == ””) &#123;</div><div class="line">        alert(”用户名不能为空!”);</div><div class="line">        event.preventDefault(); //阻止表单提交</div><div class="line">        //也可以使用下面语句</div><div class="line">        //return false;</div><div class="line">    &#125;</div><div class="line">&#125;);</div></pre></td></tr></table></figure>
+</li>
+<li><p>event.stopPropagation()方法</p>
+<p>阻止冒泡事件</p>
+</li>
+<li><p>event.target()方法</p>
+<p>获取到触发事件的元素</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line">$(”a[href=http://google.com]”).click(function(event) &#123;</div><div class="line">    alert(event.target.href);   //获取触发事件的a元素的herf属性</div><div class="line">    return false;   //阻止链接跳转</div><div class="line">&#125;);</div></pre></td></tr></table></figure>
+</li>
+</ul>
+</li>
+<li><p> 移除事件</p>
+<p>  unbind([type], [data]);<br>  可以为一个元素绑定多个事件，也可以为多个元素绑定同一个事件</p>
+  <figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div></pre></td><td class="code"><pre><div class="line">$(”btn”).bind(”click”, function() &#123;</div><div class="line">    $(”#test”).append(”&lt;p&gt;我的绑定函数1&lt;/p&gt;”);</div><div class="line">&#125;).bind(”click”, myFunction2 = function() &#123;</div><div class="line">    $(”#test”).append(”&lt;p&gt;我的绑定函数2&lt;/p&gt;”);</div><div class="line">&#125;).bind(”click”, function() &#123;</div><div class="line">    $(”#test”).append(”&lt;p&gt;我的绑定函数3&lt;/p&gt;”);</div><div class="line">&#125;);</div></pre></td></tr></table></figure>
+<p>  移除按钮元素上以前注册的事件</p>
+  <figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">$(”#delAll”).click(function() &#123;</div><div class="line">    $(”#btn”).unbind(”click”);</div><div class="line">&#125;);</div></pre></td></tr></table></figure>
+<p>  unbind([type], [data]);<br>  第一个参数是事件类型，第二个是将要移除的函数。<br>  1、  如果没有参数，则删除所有绑定的事件。<br>  2、  如果提供了事件类型作为参数，则只删除该类型的绑定事件。<br>  3、  如果把在绑定时传递的处理函数作为第二个参数，则只有这个特定的事件处理函数被删除。</p>
+</li>
+<li><p> 模拟操作</p>
+<ul>
+<li><p>常用模拟</p>
+<p>trigger()方法<br>以上例子都是用户必须通过单击按钮才能触发click事件，但有时需要通过模拟用户操作来达到单击的效果。例如在用户进入页面后，就触发click事件，而不需要用户主动单击。<br><code>$(”#btn”).trigger(”click”);</code><br>这样，当页面装载完毕后，就会立刻执行click方法。<br>也可以直接用简化写法click(),来达到同样的效果：<br><code>$(”#btn”).click();</code></p>
+</li>
+<li><p>触发自定义事件</p>
+<p>为元素绑定一个”myClick”事件:</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line">$(”#btn”).bind(”myClick”, function() &#123;</div><div class="line">    $(”#test”).append(”&lt;p&gt;我的自定义事件.&lt;/p&gt;”);</div><div class="line">&#125;);</div><div class="line">$(”#btn”).trigger(”myClick”);</div></pre></td></tr></table></figure>
+</li>
+</ul>
+</li>
+</ul>
+<h1 id="Ajax应用"><a href="#Ajax应用" class="headerlink" title="Ajax应用"></a>Ajax应用</h1><h2 id="js中Ajax的使用"><a href="#js中Ajax的使用" class="headerlink" title="js中Ajax的使用"></a>js中Ajax的使用</h2><p>Asynchronous JavaScript and XML<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div><div class="line">27</div><div class="line">28</div><div class="line">29</div><div class="line">30</div><div class="line">31</div><div class="line">32</div><div class="line">33</div><div class="line">34</div></pre></td><td class="code"><pre><div class="line">&lt;input type=”button” value=”Ajax提交” onclick=”Ajax();” /&gt;</div><div class="line">&lt;div id=”resText”&gt;&lt;/div&gt;</div><div class="line"></div><div class="line">var xmlHttpReq = null;</div><div class="line">function Ajax() &#123;</div><div class="line">    // IE5 IE6是以ActiveXObject方式</div><div class="line">    if (window.ActiveXObject) &#123;</div><div class="line">        xmlHttpReq = new ActiveXObject(”Microsoft.XMLHTTP”);</div><div class="line">        // 除IE5 IE6以外的浏览器</div><div class="line">    &#125; else if (window.XMLHttpRequest) &#123;</div><div class="line">        //实例化XMLHttpRequest对象</div><div class="line">        xmlHttpReq = new XMLHttpRequest();</div><div class="line">    &#125;</div><div class="line">    //调用open()方法并采用异步方式 默认的也是异步方式</div><div class="line">    xmlHttpReq.open(”GET”, ”test.jsp”, true);</div><div class="line">    //xmlHttpReq的readyState值改变时，会激发一个readystatechange事件</div><div class="line">    //可以使用onreadystatechange属性来注册该回调事件处理器。</div><div class="line">    xmlHttmReq.onreadystatechange = RequestCallBack; //设置回调函数</div><div class="line">    //使用send()方法发送该请求，若使用GET方式，则可以使用null作为参数</div><div class="line">    xmlHttpReq.send(null);</div><div class="line">&#125;</div><div class="line">/*</div><div class="line">当请求状态改变时，XMLHttpRequest对象调用onreadystatechange属性注册的事件处理器。</div><div class="line">因此，在处理该响应之前，事件处理器应该首先检查readyState的值和HTTP状态。</div><div class="line">当请求完成加载(readyState值为4)并且响应已经成功(HTTP状态值为200时)，就可以调用一个js函数来处理该响应内容。</div><div class="line">*/</div><div class="line">function RequestCallBack() &#123;</div><div class="line">    if (xmlHttpReq.readyState == 4) &#123;</div><div class="line">        if (xmlHttpReq.status == 200) &#123;</div><div class="line">            //将xmlHttpReq.responseText的值赋予id为resText的元素</div><div class="line">            document.getElementById(”resText”).innerHTML = xmlHttpReq.responseText;</div><div class="line">        &#125;</div><div class="line">    &#125;</div><div class="line">&#125;</div></pre></td></tr></table></figure></p>
+<h2 id="jQuery中的Ajax"><a href="#jQuery中的Ajax" class="headerlink" title="jQuery中的Ajax"></a>jQuery中的Ajax</h2><p>jQuery对Ajax进行了封装，在jQuery中$.ajax()方法羽毛球最底层方法，第2层是load()、$.get()和$.post()方法，第3层是$.getScript()和$.getJSON()方法。</p>
+<h3 id="load-方法"><a href="#load-方法" class="headerlink" title="load()方法"></a>load()方法</h3><pre><code>载入HTML静态文档
+能载入远程HTML代码并插入DOM中
+load(url, [data], [callback])
+</code></pre><p><div class="div_table"></div></p>
+<table><br>    <thead><br>        <tr><br>            <th>参数名称</th><br>            <th>类型</th><br>            <th>说明</th><br>        </tr><br>    </thead><br>    <tbody><br>        <tr><br>            <td>url</td><br>            <td>String</td><br>            <td>请求HTML页面的URL地址</td><br>        </tr><br>        <tr><br>            <td>data(可选)</td><br>            <td>Object</td><br>            <td>发送至服务器的key/value数据</td><br>        </tr><br>        <tr><br>            <td>callback(可选)</td><br>            <td>Function</td><br>            <td>请求完成时的回调函数，无论请求成功或失败</td><br>        </tr><br>    </tbody><br></table>
+
+<pre><code>testLoad.html页面：
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line">&lt;div class=&quot;comment&quot;&gt;</div><div class="line">    &lt;h2&gt;张三：&lt;/h2&gt;</div><div class="line">    &lt;p class=&quot;para&quot;&gt;沙发.&lt;/p&gt;</div><div class="line">&lt;/div&gt;</div></pre></td></tr></table></figure>
+
+主页面：
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div></pre></td><td class="code"><pre><div class="line">&lt;input id=&quot;send&quot; type=&quot;button&quot; value=&quot;AjaxLoad()&quot; /&gt;</div><div class="line">&lt;div class=&quot;comment&quot;&gt;已有评论：&lt;/div&gt;</div><div class="line">&lt;div id=&quot;resText&quot;&gt;&lt;/div&gt;</div><div class="line">$(&quot;#send&quot;).click(function() &#123;</div><div class="line">    $(&quot;#resText&quot;).load(&quot;testLoad.html&quot;);</div><div class="line">&#125;);</div></pre></td></tr></table></figure>
+
+筛选载入的HTML文档
+如果需要加载页面中的某些元素，可以通过URL参数指定选择符。
+语法结构：”url selector”。(URL和选择器之间有一个空格)
+如：
+$(&quot;#resText&quot;).load(&quot;testLoad.html .para&quot;);
+
+传递方式
+load()方法的传递方式根据参数data来自动指定。如果没有参数传递，则采用GET方式传递;反之，则会自动转换为POST方式。
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line">//无参数传递，则是GET方式</div><div class="line">$(&quot;#resText&quot;).load(&quot;testLoad.html&quot;, function() &#123;...&#125;);</div><div class="line">//有参数传递，则是POST方式</div><div class="line">$(&quot;#resText&quot;).load(&quot;testLoad.html&quot;, &#123;name: &quot;rain&quot;, age: &quot;22&quot;&#125;, function() &#123;...&#125;);</div></pre></td></tr></table></figure>
+
+回调参数
+对于必须在加载完成后才能继续的操作，load()提供了回调函数，有3个参数，分别代表请求返回的内容、请求状态和XMLHttpRequest对象：
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line">$(&quot;#resText&quot;).load(&quot;testLoad.html&quot;, &#123;name: &quot;rain&quot;, age: &quot;22&quot;&#125;, function(responseText, textStatus, XMLHttpRequest) &#123;</div><div class="line">        //responseText:请求返回的内容...</div><div class="line">        //textStatus:   请求状态：success/error/notmodified/timeout4种</div><div class="line">        //XMLHttpRequest:XMLHttpRequest对象</div><div class="line">&#125;);</div></pre></td></tr></table></figure>
+</code></pre><h3 id="get-方法和-post-方法"><a href="#get-方法和-post-方法" class="headerlink" title="$.get()方法和$.post()方法"></a>$.get()方法和$.post()方法</h3><p>load()通常用来从Web上获取静态的数据文件，如果要传递一些参数给服务器中的页面，那么可以使用$.get()或者$.post()方法(或者是后面讲解的$.ajax()方法)。</p>
+<ul>
+<li> $.get()方法<br>$.get()方法使用GET方式来进行异步请求<br>$.get(url,data,[success(response,status,xhr) callback],dataType)</li>
+</ul>
+<p><div class="div_table"></div></p>
+<p><table><br>    <thead><br>        <tr><br>            <th>参数名称</th><br>            <th>类型</th><br>            <th>说明</th><br>        </tr><br>    </thead><br>    <tbody><br>        <tr><br>            <td>url</td><br>            <td>String</td><br>            <td>规定将请求发送的哪个URL</td><br>        </tr><br>        <tr><br>            <td>data(可选)</td><br>            <td>Object</td><br>            <td>发送到服务器的key/value数据会作为QueryString附加到URL中</td><br>        </tr><br>        <tr><br>            <td>callback(可选)</td><br>            <td>Function</td><br>            <td>请求成功时回调函数自动将请求结果和状态传递给该方法。<br>                额外的参数：<br>                response - 包含来自请求的结果数据<br>                status - 包含请求的状态<br>                xhr - 包含 XMLHttpRequest 对象<br>            </td><br>        </tr><br>        <tr><br>            <td>type(可选)</td><br>            <td>String</td><br>            <td>服务器响应返回的数据类型，默认地，jQuery将智能判断。可能的类型：”xml””html””text””script””json””jsonp”<br>            </td><br>        </tr><br>    </tbody><br></table><br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div></pre></td><td class="code"><pre><div class="line">$(&quot;#send&quot;).click(function() &#123;</div><div class="line">    $.get(&quot;&lt;%=request.getContextPath() %&gt;/jQuery/test.action&quot;, &#123;</div><div class="line">        userName : $(&quot;#userName&quot;).val(),</div><div class="line">        content : $(&quot;#content&quot;).val()</div><div class="line">    &#125;, function(data, taxtStatus) &#123;</div><div class="line">        $(&quot;#resText&quot;).html(data);</div><div class="line">    &#125;);</div><div class="line">&#125;);</div></pre></td></tr></table></figure></p>
+<p><i style="color: red;">tip: data为经过action处理后的数据。</i></p>
+<ul>
+<li><p> $.post()方法</p>
+<p>  它与$.get()方法的结构和使用方式都相同。<br>  区别：</p>
+<pre><code>GET请求会将参数跟在URL后传递，而POST则是作为HTTP消息的实体内容发送给Web服务器。当然，在Ajax请求中，这种区别对用户是不可见的。
+GET方式对传输的数据大小限制(通常不能大于2KB)，而使用POST方式不受限制。
+GET请求的数据会被浏览器缓存起来，能被读取，例如账号和密码等，带有安全性问题，而POST方式相对来说可以避免这些问题。
+GET和POST方式传递的数据在服务器端获取方式也不相同。
+</code></pre></li>
+</ul>
+<h3 id="getScript-、-each-、-getJSON-方法"><a href="#getScript-、-each-、-getJSON-方法" class="headerlink" title="$.getScript()、$.each()、$.getJSON()方法"></a>$.getScript()、$.each()、$.getJSON()方法</h3><ul>
+<li><p> $.getScript()方法<br>有时候，在页面初次加载时就取得所需的全部JS文件是没必要的。虽然可以在需要哪个<br>JS文件时，动态地创建&lt;script/&gt;标签，如：<br><code>$(document.createElement(”script”)).attr(”src”, ”test.js”).appendTo(&quot;head&quot;);</code><br>或<br><code>$(&quot;&lt;script type=&#39;text/javascript&#39; src=&#39;test.js&#39; /&gt;&quot;).appendTo(&quot;head&quot;);</code><br>这种方式并不理想，为此，jQuery提供了$.getScript()方法来直接加载JS文件。</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line">$(function() &#123;</div><div class="line">    $(&quot;#send&quot;).click(function() &#123;</div><div class="line">        $.getScript(”test.js”);</div><div class="line">    &#125;);</div><div class="line">&#125;)</div></pre></td></tr></table></figure>
+</li>
+<li><p> $.getJSON方法</p>
+<p>  用于加载JSON文件，与$.getScript()方法用法相同。</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div></pre></td><td class="code"><pre><div class="line">$(function() &#123;</div><div class="line">    $(”#send”).click(function() &#123;</div><div class="line">        $.getJSON(”test.js”, function(data) &#123;</div><div class="line">            //data:返回的数据</div><div class="line">        &#125;);</div><div class="line">    &#125;)</div><div class="line">&#125;)</div></pre></td></tr></table></figure>
+</li>
+<li><p> $.each()方法</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div></pre></td><td class="code"><pre><div class="line">$(function() &#123;</div><div class="line">    $(”#send”).click(function() &#123;</div><div class="line">        $.getJSON(”test.js”, function(data) &#123;</div><div class="line">            $(”#resText”).empty();</div><div class="line">            var html = ””;</div><div class="line">            $.each(data, function(commentIndex, comment) &#123;</div><div class="line">                html += ”&lt;div&gt;&lt;h6&gt;” + comment[”userName”] </div><div class="line">                    + ”:&lt;/h6&gt;&lt;p&gt;” + comment[”content”] + ”&lt;/p&gt;&lt;/div&gt;”;</div><div class="line">            &#125;);</div><div class="line">        $(”#resText”).html(html);</div><div class="line">        &#125;);</div><div class="line">    &#125;);</div><div class="line">&#125;)</div></pre></td></tr></table></figure>
+<p>  通过$.each()循环函数依次遍历每个项，将遍历出来的内容构建成HTML代码拼接起来添加到id为”resText”的元素中。<br>  <i style="color: red;">tip:    return false 跳出循环； return true 进入下一个循环。</i></p>
+</li>
+</ul>
+<h3 id="ajax-方法"><a href="#ajax-方法" class="headerlink" title="$.ajax()方法"></a>$.ajax()方法</h3><p>该方法只有一个参数，参数对象包含了所需要的请求设置以及回调函数等信息，参数以key/value的形式存在，所有参数都是可选的。常用参数如下表：</p>
+<table>
+<thead>
+<tr>
+<th style="text-align:center">参数名称</th>
+<th style="text-align:center">类型</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center">url</td>
+<td style="text-align:center">String</td>
+<td>(默认当前页地址)发送请求的地址</td>
+</tr>
+<tr>
+<td style="text-align:center">type</td>
+<td style="text-align:center">String</td>
+<td>请求方式(POST/GET)默认GET</td>
+</tr>
+<tr>
+<td style="text-align:center">timeout</td>
+<td style="text-align:center">Number</td>
+<td>设置请求超时时间（毫秒）。此设置将覆盖全局设置。</td>
+</tr>
+<tr>
+<td style="text-align:center">data</td>
+<td style="text-align:center">Object/String</td>
+<td>发送到服务器的数据。将自动转换为请求字符串格式。GET 请求中将附加在 URL 后。查看 processData 选项说明以禁止此自动转换。必须为 Key/Value 格式，如：{foo1:”bar1”, foo2:”bar2”}。如果为数组，jQuery 将自动为不同值对应同一个名称。如 {foo:[“bar1”, “bar2”]} 转换为 ‘&amp;foo=bar1&amp;foo=bar2’</td>
+</tr>
+<tr>
+<td style="text-align:center">dataType</td>
+<td style="text-align:center">String</td>
+<td>预期服务器返回的数据类型。如果不指定，jQuery 将自动根据 HTTP 包 MIME 信息来智能判断，比如 XML MIME 类型就被识别为 XML, 服务器端返回的数据会根据这个值解析后，传递给回调函数。”xml”: 返回 XML 文档，可用 jQuery 处理。”html”: 返回纯文本 HTML 信息；包含的 script 标签会在插入 dom 时执行。”script”: 返回纯文本 JavaScript 代码。不会自动缓存结果。除非设置了 “cache” 参数。注意：在远程请求时(不在同一个域下)，所有 POST 请求都将转为 GET 请求。（因为将使用 DOM 的 script标签来加载）”json”: 返回 JSON 数据 。”jsonp”: JSONP 格式。使用 JSONP 形式调用函数时，如 “myurl?callback=?” jQuery 将自动替换 ? 为正确的函数名，以执行回调函数。 “text”: 返回纯文本字符串</td>
+</tr>
+<tr>
+<td style="text-align:center">beforeSend</td>
+<td style="text-align:center">Function</td>
+<td>发送请求前可修改 XMLHttpRequest 对象的函数，如添加自定义 HTTP 头。XMLHttpRequest 对象是唯一的参数。这是一个 Ajax 事件。如果返回 false 可以取消本次 ajax 请求。function(XMLHttpRequest) {…}</td>
+</tr>
+<tr>
+<td style="text-align:center">complete</td>
+<td style="text-align:center">Function</td>
+<td>请求完成后回调函数 (请求成功或失败之后均调用)。参数： XMLHttpRequest 对象和一个描述请求类型的字符串。function(XMLHttpRequest, textStatus){}</td>
+</tr>
+<tr>
+<td style="text-align:center">success</td>
+<td style="text-align:center">Function</td>
+<td>请求成功后的回调函数。参数：由服务器返回，并根据 dataType 参数进行处理后的数据；描述状态的字符串。function(data, textStatus) {//data可能是xmlDoc/jsonObj/html等}</td>
+</tr>
+<tr>
+<td style="text-align:center">error</td>
+<td style="text-align:center">Function</td>
+<td>自动判断 (xml 或 html)。请求失败时调用此函数。有以下三个参数：XMLHttpRequest 对象、错误信息、（可选）捕获的异常对象。如果发生了错误，错误信息（第二个参数）除了得到 null 之外，还可能是 “timeout”, “error”, “notmodified” 和 “parsererror”。function(XMLHttpRequest, textStatus, errorThrown) {…}</td>
+</tr>
+<tr>
+<td style="text-align:center">global</td>
+<td style="text-align:center">Boolean</td>
+<td>是否触发全局 AJAX 事件。默认值: true。设置为 false 将不会触发全局 AJAX 事件，如 ajaxStart 或 ajaxStop 可用于控制不同的 Ajax 事件。</td>
+</tr>
+</tbody>
+</table>
+<h2 id="序列化元素"><a href="#序列化元素" class="headerlink" title="序列化元素"></a>序列化元素</h2><h3 id="serialize-方法"><a href="#serialize-方法" class="headerlink" title="serialize()方法"></a>serialize()方法</h3><p>能够将DOM表单元素内容序列化为字符串，用于Ajax请求，会自动编码。<br>下面的 $(“#form1”).serialize()<br>相当于 “versions=”+versions+”&amp;channelNums=”+channelNums<br>例：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div></pre></td><td class="code"><pre><div class="line">&lt;form id=&quot;form1&quot; action=&quot;#&quot;&gt;</div><div class="line">    &lt;p&gt;评论：&lt;/p&gt;</div><div class="line">    &lt;p&gt;姓名：&lt;input type=&quot;text&quot; id=&quot;userName&quot; name=&quot;userName&quot; /&gt;&lt;/p&gt;</div><div class="line">    &lt;p&gt;内容：&lt;textarea id=&quot;content&quot; name=&quot;content&quot;&gt;&lt;/textarea&gt;&lt;/p&gt;</div><div class="line">    &lt;p&gt;&lt;input type=&quot;button&quot; id=&quot;send&quot; value=&quot;提交&quot; /&gt;&lt;/p&gt;</div><div class="line">&lt;/form&gt;</div><div class="line">$.ajax(&#123; </div><div class="line">    ...</div><div class="line">    //第一种格式</div><div class="line">    data: &quot;versions=&quot;+versions+&quot;&amp;channelNums=&quot;+channelNums,</div><div class="line">    //第二种格式</div><div class="line">    data: &#123;versions : $(&quot;#versions&quot;).val(), channelNums : $(&quot;#channelNums&quot;).val()&#125;,</div><div class="line">    //第三种格式</div><div class="line">    data: $(&quot;#form1&quot;).serialize(), </div><div class="line">    ...</div><div class="line">&#125;);</div></pre></td></tr></table></figure></p>
+<h3 id="serializeArray-方法"><a href="#serializeArray-方法" class="headerlink" title="serializeArray()方法"></a>serializeArray()方法</h3><p>与serialize()方法类似，但该方法不是返回字符串，而是将DOM元素序列化后，返回JSON格式的数据。Array[Object, Object, …]。<br>既然是一个对象数组，就可以使用$.each()函数对数据进行迭代输出。<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div></pre></td><td class="code"><pre><div class="line">var fields = $(&quot;#form1&quot;).serializeArray();</div><div class="line">    var f = $(&quot;#form1&quot;).serialize();</div><div class="line">    $.each(fields, function(i, field) &#123;</div><div class="line">        console.log(field.value);   //Firebug输出</div><div class="line">        $(&quot;#resText&quot;).append(field.value + &quot;,&quot;);</div><div class="line">&#125;);</div></pre></td></tr></table></figure></p>
+<h3 id="param-方法"><a href="#param-方法" class="headerlink" title="$.param()方法"></a>$.param()方法</h3><p>它是serialize()方法的核心，用来对一个数组或对象按照key/value进行序列化。<br>比如将一个普通的对象序列化：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line">//创建对象</div><div class="line">var obj = &#123;a:1, b:2, c:3&#125;;</div><div class="line">var k = $.param(obj);</div><div class="line">alert(k);   //输出a=1&amp;b=2&amp;c=3</div></pre></td></tr></table></figure></p>
+<h2 id="jQuery中的Ajax全局事件"><a href="#jQuery中的Ajax全局事件" class="headerlink" title="jQuery中的Ajax全局事件"></a>jQuery中的Ajax全局事件</h2><p>通过jQuery提供了一些自定义全局函数，能够为各种与Ajax相关的事件注册回调函数。<br>例如：<br>当Ajax请求开始时，会触发ajaxStart()方法的回调函数；<br>当Ajax请求结束时，会触发ajaxStop()方法的回调函数。<br>当远程读取网站图片速度可能会变慢，加载过程中，不给用户提供一些提示和反馈信息，很容易让用户误认为按钮单击无用，使用户对网站失去信心。此时，就需要为网页添加一个提示信息，常用的提示信息是“加载中…”，代码如下：<br><code>&lt;div id=”loading”&gt;加载中...&lt;/div&gt;</code><br>然后用CSS控制元素隐藏，当Ajax请求开始时，将此元素显示，用来提示用户Ajax请求正在进行。当Ajax请求结束后，将此元素隐藏。代码如下：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line">$(”#loading”).ajaxStart(function() &#123;</div><div class="line">    $(this).show();</div><div class="line">&#125;).ajaxStop(function() &#123;</div><div class="line">    $(this).hide();</div><div class="line">);</div></pre></td></tr></table></figure></p>
+<p>这样就极大的改善了用户体验。<br>另外几个Ajax全局事件:</p>
+<table>
+<thead>
+<tr>
+<th>方法名称</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>ajaxComplete(callback)</td>
+<td>Ajax请求完成时执行的函数</td>
+</tr>
+<tr>
+<td>ajaxError(callback)</td>
+<td>请求发生错误时执行的函数，捕捉的错误可作为最后一个参数传递</td>
+</tr>
+<tr>
+<td>ajaxSend(callback)</td>
+<td>请求发送前执行的函数</td>
+</tr>
+<tr>
+<td>ajaxSuccess(callback)</td>
+<td>请求成功时执行的函数</td>
+</tr>
+</tbody>
+</table>
+<h1 id="插件的使用和写法"><a href="#插件的使用和写法" class="headerlink" title="插件的使用和写法"></a>插件的使用和写法</h1><p>jQuery官网插件下载：<a href="http://plugins.jquery.com/" target="_blank" rel="external">http://plugins.jquery.com/</a><br><i style="color: red;"> tip: JS是解释型语言，是根据标签引用分块顺序执行的，所以若有其他插件依赖jquery.js,请把jquery.js放到最前面。</i></p>
+<h2 id="表单验证插件-Validation"><a href="#表单验证插件-Validation" class="headerlink" title="表单验证插件-Validation"></a>表单验证插件-Validation</h2><p>下载地址：<a href="http://plugins.jquery.com/project/validate" target="_blank" rel="external">http://plugins.jquery.com/project/validate</a><br>具体使用详见：《锋利的jQuery》PDF-208P</p>
+<h2 id="表单插件-Form"><a href="#表单插件-Form" class="headerlink" title="表单插件-Form"></a>表单插件-Form</h2><p>下载地址：<a href="http://malsup.com/jquery/form/#download" target="_blank" rel="external">http://malsup.com/jquery/form/#download</a><br>具体使用详见：《锋利的jQuery》PDF-219P</p>
+<p>优秀的Ajax表单插件，可以非常容易地、无侵入地升级HTML表单以支持Ajax。<br>其两个核心方法：ajaxForm()、ajaxSubmit()<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line">&lt;head&gt;</div><div class="line">    &lt;script type=&quot;text/javascript&quot; src=&quot;$&#123;appRoot&#125;/js/easyui/jquery-1.4.4.min.js&quot;&gt;&lt;/script&gt;</div><div class="line">    &lt;script type=&quot;text/javascript&quot; src=&quot;$&#123;appRoot&#125;/js/cms/jquery.form.js&quot;&gt;&lt;/script&gt;</div><div class="line">&lt;/head&gt;</div></pre></td></tr></table></figure></p>
+<p>当表单被提交时，表单字段值会以无刷新的方式提交。<br>ajaxForm()和ajaxSubmit()方法都能接受0个或者1个参数。当为一个参数时，该参数既可以是一个回调函数，也可以是一个options对象。</p>
+<p>回调函数参数方式：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div></pre></td><td class="code"><pre><div class="line">$(&quot;#myForm&quot;).ajaxForm(function() &#123;</div><div class="line">    $(&quot;#output&quot;).html(&quot;提交成功!欢迎下次再来!&quot;).show();</div><div class="line">&#125;);</div><div class="line">$(&quot;#myForm&quot;).submit(function() &#123;</div><div class="line">    $(this).ajaxSubmit(function() &#123;</div><div class="line">        $(&quot;#output&quot;).html(&quot;提交成功!欢迎下次再来!&quot;).show();</div><div class="line">    &#125;);</div><div class="line">    return false;   //阻止表单默认提交</div><div class="line">&#125;);</div></pre></td></tr></table></figure></p>
+<table>
+<thead>
+<tr>
+<th>参数名称</th>
+<th>类型</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>target</td>
+<td>selector</td>
+<td>把服务器返回的内容放入id为output的元素中</td>
+</tr>
+<tr>
+<td>beforeSubmit</td>
+<td>Function</td>
+<td>提交前的回调函数</td>
+</tr>
+<tr>
+<td>success</td>
+<td>Function</td>
+<td>提交后的回调函数</td>
+</tr>
+<tr>
+<td>url</td>
+<td>String</td>
+<td>默认是form的action，如果申明，则会覆盖</td>
+</tr>
+<tr>
+<td>type</td>
+<td>GET/POST</td>
+<td>默认form的method,如果申明，则会覆盖</td>
+</tr>
+<tr>
+<td>dataType</td>
+<td>String</td>
+<td>”xml””script””json” …服务端返回的类型</td>
+</tr>
+<tr>
+<td>clearForm</td>
+<td>boolean</td>
+<td>(true)成功提交后，清除所有表单元素的值</td>
+</tr>
+<tr>
+<td>resetForm</td>
+<td>boolean</td>
+<td>(true)成功提交后，重置所有表单元素的值</td>
+</tr>
+<tr>
+<td>timeout</td>
+<td>number</td>
+<td>(毫秒单位)限制请求的时间，请求超出时，跳出请求</td>
+</tr>
+</tbody>
+</table>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div></pre></td><td class="code"><pre><div class="line">options = &#123;</div><div class="line">    target: &quot;#output&quot;, </div><div class="line">    beforeSubmit: showRequest, </div><div class="line">    success: showResponse, </div><div class="line">    //...</div><div class="line">&#125;</div><div class="line">$(&quot;#myForm&quot;).ajaxForm(options);</div><div class="line">$(&quot;#myForm&quot;).submit(function() &#123;</div><div class="line">    $(this).ajaxSubmit(options);</div><div class="line">    return false;   //阻止表单默认提交</div><div class="line">&#125;);</div></pre></td></tr></table></figure>
+<ul>
+<li><p>beforeSubmit : showRequest<br>表单提交前调用：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line">function showRequest(formData, jqForm, options) &#123;</div><div class="line">    //...</div><div class="line">    return true;</div><div class="line">&#125;</div></pre></td></tr></table></figure>
+<p>  formdata是数组对象，可以使用$.param(formdata)方法把它转化为字符串。<br>  得到：name=1&amp;address=2<br>  jqForm是一个jQuery对象，封装了表单元素。如果访问jqForm的DOM元素：<br>  var formElement = jqFrom[0];<br>  var address = formElement.address.value;<br>  此回调函数只要不返回false，表单都将被提交。</p>
+</li>
+<li><p>success : showResponse<br>提交后的回调函数：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">function showResponse(responseText, statusText) &#123;</div><div class="line">    //...</div><div class="line">&#125;</div></pre></td></tr></table></figure>
+<p>  responseText : 带着服务器返回的数据内容。<br>  statusText : 只是一个返回状态，例如success/error等。</p>
+</li>
+</ul>
+<h2 id="jQuery-UI插件"><a href="#jQuery-UI插件" class="headerlink" title="jQuery UI插件"></a>jQuery UI插件</h2><p>下载地址：<a href="http://ui.jquery.com/download" target="_blank" rel="external">http://ui.jquery.com/download</a><br>详见：231P<br>主要分为3个部分：交互、微件、效果库</p>
+<h2 id="Cookie插件"><a href="#Cookie插件" class="headerlink" title="Cookie插件"></a>Cookie插件</h2><p>下载地址：<a href="http://plugins.jquery.com/project/Cookie" target="_blank" rel="external">http://plugins.jquery.com/project/Cookie</a><br>详见：237P<br>主要管理cookie。</p>
+<h1 id="js、jQuery常用操作"><a href="#js、jQuery常用操作" class="headerlink" title="js、jQuery常用操作"></a>js、jQuery常用操作</h1><h2 id="复选框、下拉框是否被选中"><a href="#复选框、下拉框是否被选中" class="headerlink" title="复选框、下拉框是否被选中"></a>复选框、下拉框是否被选中</h2><ul>
+<li><p>js:</p>
+  <figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">var $cr = $(”#cr”); //jQuery对象</div><div class="line">var cr = $cr[0];    //DOM对象</div><div class="line">if(cr.checked) &#123;...&#125;    //DOM方式判断</div></pre></td></tr></table></figure>
+</li>
+<li><p>jQuery:</p>
+  <figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div></pre></td><td class="code"><pre><div class="line">var $cr = $(”#cr”);</div><div class="line">$cr.click(function() &#123;</div><div class="line">    if($cr.is(”:checked”)) &#123;...&#125;</div><div class="line">    $cr.attr(”checked”, false); //不选</div><div class="line">&#125;)</div><div class="line">// select下拉列表值</div><div class="line">var val = $(”#provice”).val();</div><div class="line">var text = $(”#provice”).find(”option:selected”).text();</div><div class="line">$(”#provice”).find(”option”).eq(0).prop(”selected”, true);</div></pre></td></tr></table></figure>
+<p>  复选框同理<br>  <i style="color: red;">tips：select下拉列表值  设置其中被选中不要用attr 要用prop</i></p>
+</li>
+</ul>
+<h2 id="JS对象属性遍历"><a href="#JS对象属性遍历" class="headerlink" title="JS对象属性遍历"></a>JS对象属性遍历</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div></pre></td><td class="code"><pre><div class="line">//创建对象</div><div class="line">var obj = &#123;a:1, b:2, c:3&#125;;</div><div class="line">var myObject = new Object();</div><div class="line">myObject.name = &quot;wang&quot;;</div><div class="line">myObject.age = 26;</div><div class="line">for(m in myObject) &#123;</div><div class="line">    console.log(&quot;属性&quot; + m + &quot;的值为&quot; + myObject[m] + &quot;,&quot;);</div><div class="line">&#125;</div></pre></td></tr></table></figure>
+  
 	</div>
 		<footer class="article-footer clearfix">
 <div class="article-catetags">
@@ -310,11 +782,7 @@ element.style.color = ”red”;
 		<ul class="clearfix">
 		
 			
-				<li><a href="/tags/J2EE/" title="J2EE">J2EE<sup>1</sup></a></li>
-			
-		
-			
-				<li><a href="/tags/java/" title="java">java<sup>1</sup></a></li>
+				<li><a href="/tags/command/" title="command">command<sup>1</sup></a></li>
 			
 		
 			
@@ -322,11 +790,15 @@ element.style.color = ”red”;
 			
 		
 			
-				<li><a href="/tags/command/" title="command">command<sup>1</sup></a></li>
+				<li><a href="/tags/jQuery/" title="jQuery">jQuery<sup>1</sup></a></li>
 			
 		
 			
-				<li><a href="/tags/jQuery/" title="jQuery">jQuery<sup>1</sup></a></li>
+				<li><a href="/tags/J2EE/" title="J2EE">J2EE<sup>1</sup></a></li>
+			
+		
+			
+				<li><a href="/tags/java/" title="java">java<sup>1</sup></a></li>
 			
 		
 		</ul>
