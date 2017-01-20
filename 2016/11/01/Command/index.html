@@ -35,7 +35,7 @@ ls -lh  显示出文件大小
 cd切换目录(/ 到根目录; ..到上层目录; - 到上次工作的目录;~ 到当前用户根目录)change directory
 
 p">
-<meta property="og:updated_time" content="2016-12-05T07:46:01.012Z">
+<meta property="og:updated_time" content="2016-12-29T02:12:58.010Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Command 工作常用命令">
 <meta name="twitter:description" content="工作常用命令：Linux、eclipse、sublime
@@ -170,6 +170,9 @@ grep &quot;abc&quot; . -r       在当前多级目录中对文本进行递归(re
 </code></pre></li>
 <li><code>sz</code><br>下载到本地<pre><code>sz filename
 </code></pre></li>
+<li><code>scp</code><br>从远处复制文件到本地目录<pre><code>scp root@10.10.10.10:/opt/soft/1.txt /opt/soft/
+</code></pre>从远处复制目录到本地<pre><code>scp -r root@10.10.10.10:/opt/soft/mongodb /opt/soft/
+</code></pre>从本地复制到的远程只要将命令后面2个参数互换顺序就行了。</li>
 <li><code>wget</code><br>从URL中下载<pre><code>wget http://cn.wordpress.org/wordpress-3.1-zh_CN.zip
 </code></pre></li>
 <li><p><code>rz -be</code></p>
@@ -387,15 +390,15 @@ chown user2 3.txt
 			
 		
 			
-				<li><a href="/tags/jQuery/" title="jQuery">jQuery<sup>1</sup></a></li>
-			
-		
-			
 				<li><a href="/tags/mayi/" title="mayi">mayi<sup>1</sup></a></li>
 			
 		
 			
 				<li><a href="/tags/java/" title="java">java<sup>1</sup></a></li>
+			
+		
+			
+				<li><a href="/tags/jQuery/" title="jQuery">jQuery<sup>1</sup></a></li>
 			
 		
 		</ul>
@@ -410,7 +413,7 @@ chown user2 3.txt
 		
 
 		<p class="copyright">
-		Powered by <a href="http://hexo.io" target="_blank" title="hexo">hexo</a> and Theme by <a href="https://github.com/hsihohuang/kiddochan" target="_blank" title="Kiddochan">Kiddochan</a> © 2016 
+		Powered by <a href="http://hexo.io" target="_blank" title="hexo">hexo</a> and Theme by <a href="https://github.com/hsihohuang/kiddochan" target="_blank" title="Kiddochan">Kiddochan</a> © 2017 
 		
 		<a href="/about" target="_blank" title="UDnian">UDnian</a>
 		
