@@ -21,7 +21,7 @@
 <meta property="og:description" content="mayi项目部署路径
 线上duanzu/data/online/new_mayi/workspace/duanzu/WEB-INF/classes/com/mayi/duanzu//data/online/new_mayi/workspace/duanzu/WEB-INF/view
 线上mis/data/online/mis/workspace/duanzu/WEB-INF/classes/com">
-<meta property="og:updated_time" content="2016-12-08T02:07:19.156Z">
+<meta property="og:updated_time" content="2017-05-09T06:22:52.460Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="work">
 <meta name="twitter:description" content="mayi项目部署路径
@@ -107,9 +107,9 @@
 		<h1 id="mayi"><a href="#mayi" class="headerlink" title="mayi"></a>mayi</h1><h2 id="项目部署路径"><a href="#项目部署路径" class="headerlink" title="项目部署路径"></a>项目部署路径</h2><ul>
 <li>线上duanzu<br><code>/data/online/new_mayi/workspace/duanzu/WEB-INF/classes/com/mayi/duanzu/</code><br><code>/data/online/new_mayi/workspace/duanzu/WEB-INF/view</code></li>
 <li>线上mis<br><code>/data/online/mis/workspace/duanzu/WEB-INF/classes/com/mayi/mis</code><br><code>/data/online/mis/workspace/duanzu/WEB-INF/view/mis</code></li>
-<li>预览<br><code>/data/online/preview_mayi/workspace/duanzu/WEB-INF/classes/com/mayi/duanzu/</code><br><code>/data/online/preview_mayi/workspace/duanzu/WEB-INF/view</code></li>
+<li>预览<br><code>/data/online/preview_mayi/workspace/duanzu/WEB-INF/classes/com/mayi/duanzu/</code><br><code>/data/online/preview_mayi/workspace/duanzu/WEB-INF/view</code><br><code>/data/online/preview_duanzu/workspace/duanzu/WEB-INF/classes/com/mayi/duanzu/</code><br><code>/data/online/preview_duanzu/workspace/duanzu/WEB-INF/view</code></li>
 <li>预览1<br><code>/data/online/lty/new_mayi/workspace/duanzu/WEB-INF/classes/com/mayi/duanzu/</code><br><code>/data/online/lty/new_mayi/workspace/duanzu/WEB-INF/view</code></li>
-<li>测试<br>测试192.168.65.3    sudo su - ganji<br><code>/data/test/new_mayi/workspace/duanzu/WEB-INF/classes/com/mayi/duanzu/</code><br><code>/data/test/new_mayi/workspace/duanzu/WEB-INF/view</code></li>
+<li>测试<br>192.168.40.236   192.168.40.235  mayi   mayi@2017<br>测试192.168.65.3    sudo su - ganji<br><code>/data/test/new_mayi/workspace/duanzu/WEB-INF/classes/com/mayi/duanzu/</code><br><code>/data/test/new_mayi/workspace/duanzu/WEB-INF/view</code></li>
 <li><p>static</p>
 <pre><code>online 26 22 /data/static/new_mayi
 pre 26 22 /data/static/preview
@@ -122,8 +122,10 @@ test 65.3 /data/static/new_mayi
 <pre><code>pre：  http://staticnewpre.mayi.com/
 online:   http://staticnew.mayi.com/
 </code></pre></li>
-<li><p>日志</p>
+<li><p>控制台日志</p>
 <pre><code>/data/online/mis/jetty-9.2.17/logs/2016_09_23.stderrout.log
+</code></pre></li>
+<li>推送日志<pre><code>/data/logs/new_mayi/web/pushmsg.log
 </code></pre></li>
 <li>host<pre><code>C:\Windows\System32\drivers\etc
 </code></pre></li>
@@ -137,12 +139,10 @@ online:   http://staticnew.mayi.com/
 </code></pre></li>
 <li>查看sql优化<pre><code>http://www.mayi.com/sys/sql
 </code></pre></li>
-<li>脚本所在服务器<pre><code>yz-dz-web-02   172.16.16.22
-/usr/local/shell/change_nginx1.sh
-/usr/local/shell/change_nginx1_recover.sh
-/usr/local/shell/change_nginx2.sh
-/usr/local/shell/change_nginx2_recover.sh
+<li>脚本所在服务器<pre><code>mayi@ecs-web-01   172.16.17.21
+/usr/local/shell/change_nginx.sh  [ web01 web02 web03 recover ]
 </code></pre></li>
+<li>172.16.17.24 的new_mayi也要部署下</li>
 </ul>
 <h3 id="重启切换nginx"><a href="#重启切换nginx" class="headerlink" title="重启切换nginx"></a>重启切换nginx</h3><ul>
 <li>重启web02<pre><code>./change_nginx1.sh web02
@@ -223,7 +223,12 @@ ImageConstants.java 图片比例大小定义
 &lt;/#if&gt;
 
 TempCommonManager   sql执行
-</code></pre>  
+</code></pre><ul>
+<li>程序无法启动时，可以用下面的方法试试<pre><code>先jps -l  找到 相应java程序的进程id  ，如上面的  5995 就是new_mayi的
+再ps -ef |grep 5995  找到哪个任务在占用， 再 kill -9  6145    6145指的是占用的那个进程id
+</code></pre></li>
+</ul>
+  
 	</div>
 		<footer class="article-footer clearfix">
 <div class="article-catetags">
@@ -332,19 +337,19 @@ TempCommonManager   sql执行
 			
 		
 			
-				<li><a href="/tags/J2EE/" title="J2EE">J2EE<sup>1</sup></a></li>
-			
-		
-			
-				<li><a href="/tags/mayi/" title="mayi">mayi<sup>1</sup></a></li>
-			
-		
-			
 				<li><a href="/tags/java/" title="java">java<sup>1</sup></a></li>
 			
 		
 			
+				<li><a href="/tags/J2EE/" title="J2EE">J2EE<sup>1</sup></a></li>
+			
+		
+			
 				<li><a href="/tags/jQuery/" title="jQuery">jQuery<sup>1</sup></a></li>
+			
+		
+			
+				<li><a href="/tags/mayi/" title="mayi">mayi<sup>1</sup></a></li>
 			
 		
 		</ul>

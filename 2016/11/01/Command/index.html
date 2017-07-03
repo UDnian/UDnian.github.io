@@ -35,7 +35,7 @@ ls -lh  显示出文件大小
 cd切换目录(/ 到根目录; ..到上层目录; - 到上次工作的目录;~ 到当前用户根目录)change directory
 
 p">
-<meta property="og:updated_time" content="2016-12-29T02:12:58.010Z">
+<meta property="og:updated_time" content="2017-05-10T02:14:29.671Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Command 工作常用命令">
 <meta name="twitter:description" content="工作常用命令：Linux、eclipse、sublime
@@ -140,14 +140,19 @@ p">
 <li><code>touch</code><br>创建文件</li>
 <li><code>rm -rf</code><br>强制递归删除文件或文件夹及子文件(recursive递归 force强制)remove</li>
 <li><code>cp -r</code><br>复制(-r递归复制)copy<pre><code>cp -rf file1/* file2    复制file1下面所有文件到file2中，已存在的覆盖，不存在的保留原样
+cp -r source_dir dest_dir
+复制source_dir文件夹到dest_dir中
 </code></pre></li>
 <li><code>mv</code><br>移动或更名现有的文件或目录(-b若覆盖文件则先行备份 -f直接覆盖)move</li>
 <li><code>vi</code><br>编辑文体文件 <a href="http://www.cnblogs.com/88999660/articles/1581524.html" target="_blank" rel="external">参考</a><pre><code>w:保存当前文件    wq保存并退出 q!:不保存并退出
+/xxx(?xxx)   
+表示在整篇文档中搜索匹配xxx的字符串, / 表示向下查找, ? 表示向上查找其中xxx可以是正规表达式
+查找到以后, 再输入 n 查找下一个匹配处, 输入 N 反方向查找
 </code></pre></li>
 <li><code>file 1.txt</code><br>查看文件类型，也可用来辨别一些文件的编码格式</li>
 <li><code>diff</code><br>比较文件的差异 diff 1.txt 2.txt -y -W 50   y并列展示 W为宽度</li>
 <li><code>more</code><br>查看文件，一页一页显示(空格：下一页；b：上一页；)    q 退出more</li>
-<li><code>cat</code><br>查看文件，全部显示 cat -n 对文件进行行编号<pre><code>cat -n 1.txt | head -n 5 | tail -n 2    显示第5行到7行
+<li><code>cat</code><br>查看文件，全部显示 cat -n 对文件进行行编号<pre><code>cat -n 1.txt | head -n 5 | tail -n 2    显示第4行到5行
 </code></pre></li>
 <li><code>head</code><br>默认打印其相应文件的开头10行(-n 显示的行数)</li>
 <li><code>tail</code><br>打印其相应文件的尾部(-f 循环读取follow；-v 显示详细的处理信息；-n 显示行数；ctrl c 终止打印)</li>
@@ -232,6 +237,10 @@ chown user2 3.txt
 <li><code>Ctrl F6</code>         切换到下一个Editor</li>
 <li><code>Ctrl F7</code>         切换到下一个Perspective</li>
 <li><p><code>Ctrl F8</code>         切换到下一个View</p>
+</li>
+<li><p><code>Ctrl O</code>          快速显示 OutLine 类方法结构</p>
+</li>
+<li><p><code>Ctrl E</code>          快速显示当前Editer的下拉列表</p>
 </li>
 <li><p><code>Ctrl Shift+X</code>    把当前选中的文本全部变为大写 </p>
 </li>
@@ -386,19 +395,19 @@ chown user2 3.txt
 			
 		
 			
-				<li><a href="/tags/J2EE/" title="J2EE">J2EE<sup>1</sup></a></li>
-			
-		
-			
-				<li><a href="/tags/mayi/" title="mayi">mayi<sup>1</sup></a></li>
-			
-		
-			
 				<li><a href="/tags/java/" title="java">java<sup>1</sup></a></li>
 			
 		
 			
+				<li><a href="/tags/J2EE/" title="J2EE">J2EE<sup>1</sup></a></li>
+			
+		
+			
 				<li><a href="/tags/jQuery/" title="jQuery">jQuery<sup>1</sup></a></li>
+			
+		
+			
+				<li><a href="/tags/mayi/" title="mayi">mayi<sup>1</sup></a></li>
 			
 		
 		</ul>

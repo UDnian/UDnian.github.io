@@ -21,7 +21,7 @@
 <meta property="og:description" content="jQuery简介$(…)、jQuery(…)
  $(”#foo”) 和 jQuery(”#foo”) 等价；
  初步使用  12345678910111213141516//引入jquery库&amp;lt;script type=”text/javascript” src=”../js/jquery-2.1.1.min.js”&amp;gt;&amp;lt;/script&amp;gt;//等待dom元素加载完毕，弹出一个">
-<meta property="og:updated_time" content="2016-12-29T00:59:04.555Z">
+<meta property="og:updated_time" content="2017-03-24T03:26:21.162Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="jQuery">
 <meta name="twitter:description" content="jQuery简介$(…)、jQuery(…)
@@ -502,10 +502,10 @@ GET和POST方式传递的数据在服务器端获取方式也不相同。
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div></pre></td><td class="code"><pre><div class="line">$(function() &#123;</div><div class="line">    $(”#send”).click(function() &#123;</div><div class="line">        $.getJSON(”test.js”, function(data) &#123;</div><div class="line">            //data:返回的数据</div><div class="line">        &#125;);</div><div class="line">    &#125;)</div><div class="line">&#125;)</div></pre></td></tr></table></figure>
 </li>
 <li><p> $.each()方法</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div></pre></td><td class="code"><pre><div class="line">$(function() &#123;</div><div class="line">    $(”#send”).click(function() &#123;</div><div class="line">        $.getJSON(”test.js”, function(data) &#123;</div><div class="line">            $(”#resText”).empty();</div><div class="line">            var html = ””;</div><div class="line">            $.each(data, function(commentIndex, comment) &#123;</div><div class="line">                html += ”&lt;div&gt;&lt;h6&gt;” + comment[”userName”] </div><div class="line">                    + ”:&lt;/h6&gt;&lt;p&gt;” + comment[”content”] + ”&lt;/p&gt;&lt;/div&gt;”;</div><div class="line">            &#125;);</div><div class="line">        $(”#resText”).html(html);</div><div class="line">        &#125;);</div><div class="line">    &#125;);</div><div class="line">&#125;)</div></pre></td></tr></table></figure>
-<p>  通过$.each()循环函数依次遍历每个项，将遍历出来的内容构建成HTML代码拼接起来添加到id为”resText”的元素中。<br>  <i style="color: red;">tip:    return false 跳出循环； return true 进入下一个循环。</i></p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div></pre></td><td class="code"><pre><div class="line">$(function() &#123;</div><div class="line">    // 第一种用法</div><div class="line">    $(&quot;button&quot;).click(function() &#123;</div><div class="line">        $(&quot;li&quot;).each(function(index, element) &#123;</div><div class="line">            alert($(this).text())</div><div class="line">        &#125;</div><div class="line">    );</div><div class="line">    </div><div class="line">    // 第二种用法</div><div class="line">    $(”#send”).click(function() &#123;</div><div class="line">        $.getJSON(”test.js”, function(data) &#123;</div><div class="line">            $(”#resText”).empty();</div><div class="line">            var html = ””;</div><div class="line">            $.each(data, function(commentIndex, comment) &#123;</div><div class="line">                html += ”&lt;div&gt;&lt;h6&gt;” + comment[”userName”] </div><div class="line">                    + ”:&lt;/h6&gt;&lt;p&gt;” + comment[”content”] + ”&lt;/p&gt;&lt;/div&gt;”;</div><div class="line">            &#125;);</div><div class="line">        $(”#resText”).html(html);</div><div class="line">        &#125;);</div><div class="line">    &#125;);</div><div class="line">&#125;)</div></pre></td></tr></table></figure>
 </li>
 </ul>
+<p>1、each() 方法规定为每个匹配元素规定运行的函数。<br>2、通过$.each()循环函数依次遍历每个项，将遍历出来的内容构建成HTML代码拼接起来添加到id为”resText”的元素中。<br><i style="color: red;">tip:    return false 跳出循环； return true 进入下一个循环。</i></p>
 <h3 id="ajax-方法"><a href="#ajax-方法" class="headerlink" title="$.ajax()方法"></a>$.ajax()方法</h3><p>该方法只有一个参数，参数对象包含了所需要的请求设置以及回调函数等信息，参数以key/value的形式存在，所有参数都是可选的。常用参数如下表：</p>
 <table>
 <thead>
@@ -791,19 +791,19 @@ GET和POST方式传递的数据在服务器端获取方式也不相同。
 			
 		
 			
-				<li><a href="/tags/J2EE/" title="J2EE">J2EE<sup>1</sup></a></li>
-			
-		
-			
-				<li><a href="/tags/mayi/" title="mayi">mayi<sup>1</sup></a></li>
-			
-		
-			
 				<li><a href="/tags/java/" title="java">java<sup>1</sup></a></li>
 			
 		
 			
+				<li><a href="/tags/J2EE/" title="J2EE">J2EE<sup>1</sup></a></li>
+			
+		
+			
 				<li><a href="/tags/jQuery/" title="jQuery">jQuery<sup>1</sup></a></li>
+			
+		
+			
+				<li><a href="/tags/mayi/" title="mayi">mayi<sup>1</sup></a></li>
 			
 		
 		</ul>
